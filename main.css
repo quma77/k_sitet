@@ -9,10 +9,11 @@ body {
   color: white;
 }
 .header{
-    padding-bottom: 176px;
+    padding-bottom: 250px;
 }
 .ttop_header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   position: relative;
   color: white;
@@ -21,17 +22,17 @@ body {
 .image-container {
   width: 100%;
   position: absolute;
+  padding: 0px;
   z-index: -1;
   filter: opacity(25%);
+  display: flex;
   top: 0px;
   left: 0px;
-  display: flex;
-
 }
 
 .image-container img {
-  width: 1900px; /* Задаем ширину изображения 100% от ширины родительского контейнера */
-  height: 100%; /* Позволяет изображению сохранить пропорции */
+  width: 100%; /* Задаем ширину изображения 100% от ширины родительского контейнера */
+  height: 600px; /* Позволяет изображению сохранить пропорции */
 }
 
 .dropdown-menu {
@@ -56,6 +57,7 @@ body {
 .main_m {
   display: flex;
   gap: 50px;
+  font-size: 19px;
 }
 
 .main_m li a {
@@ -80,7 +82,7 @@ body {
 /*  main  */
 
 .main_header {
-  padding-top: 150px;
+  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,11 +105,23 @@ h1 {
   font-size: 20px;
 }
 
+.logo img{
+    width: 120px;
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
+}
 
-.start_main_hr {
-    width: 100vw;
-    height: 1px;
-    background: white;
-    position: absolute;
-    left: 0px;
+.main_1 {
+    text-align: center;
+}
+
+.grid_1 .main_grid_1 {
+  background: white;
+  width: 200px;
+  height: 200px;
+}
+
+.grid_1 {
+  display: grid;
 }
