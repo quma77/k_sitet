@@ -126,6 +126,7 @@ h2 {
   color: white;
   padding-bottom: 40px; 
   text-align: center;
+  font-size: 30px;
 }
 
 
@@ -228,8 +229,27 @@ h2 {
 .main_2_sec {
   display: flex;
   justify-content: space-between;
+
 }
 
 .main_2_sec img {
   border: solid rgba(255, 255, 255, 0.381) 3px;
+}
+
+
+.name_s2 {
+  font-family: "Bellota Text";
+  color: white;
+  font-size: 22px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.desc_s2 {
+  font-family: "Bellota Text";
+  color: white;
+  padding-left: 45px;
+  font-size: 18px;
+  padding-bottom: 90px;
 }
