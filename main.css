@@ -7,6 +7,7 @@ body {
   overflow-x: hidden;
   margin: auto;
   color: rgb(33, 33, 33);
+  max-width: 1900px;
 }
 .header{
     padding-bottom: 250px;
@@ -112,76 +113,111 @@ h1 {
     padding: 0px;
 }
 
-.main_1 {
-    text-align: center;
+
+
+.send_message button {
+  border: solid rgba(255, 255, 255, 0.356) 1px;
+  padding: 10px 20px;
 }
 
-.grid_1 .main_grid_1_1, .main_grid_1_2, .main_grid_1_3{
-  background: rgba(56, 56, 56, 0.252);
-  width: 300px;
-  height: auto;
-  border-radius: 10% 10% 0% 0%;
-  border: solid rgba(255, 255, 255, 0.15) 0.5px;
-}
-
-.grid_1 {
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 0px auto;
-}
-
-.main_grid_1_1_text {
-  color: rgba(255, 255, 255, 0.825);
-  text-align: center;
-  padding: 0px 10px 20px 10px;
-}
 
 
 .main_1 h2 {
   font-family: "Bellota Text";
-  color: rgba(255, 255, 255, 0.94);
-}
-
-.main_grid_1_1_text > h2, p{
-  font-family: "Bellota Text";
-}
-
-.main_grid_1_1_text button{
-  border: solid rgba(255, 255, 255, 0.781) 1px;
-  padding: 7px 30px;
-  margin-top: 20px;
-}
-
-.main_grid_1_2 img , .main_grid_1_1 img, .main_grid_1_3 img{
-  width: 100%;
-  height: auto + 20px;
-  border-radius: 10% 10% 0% 0%;
-  padding-bottom: 10px;
-}
-
-.main_grid_1_2_text > h2, p{
-  font-family: "Bellota Text";
   color: white;
+  padding-bottom: 40px; 
 }
 
-.main_grid_1_2_text {
-  color: rgba(255, 255, 255, 0.825);
+
+
+.main_1 {
   text-align: center;
-  padding: 0px 13px 20px 13px;
-  font-family: "Bellota Text";
+  margin: 0px auto;
 }
 
-.main_grid_1_2_text h2 {
-  padding-top: 10px;
+
+.grid_1, .grid_2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3%;
+  margin: 0px auto;
+}
+
+.okno_g_1 {
+  width: auto;
+  height: auto;
+  max-width: 350px;
+  border-radius: 10% 10% 0 0;
+  background: rgb(37, 37, 37);
+  border: solid rgba(255, 255, 255, 0.425) 1px;
+}
+
+.img_g_1 img{
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  border-radius: 10% 10% 0 0;
   padding-bottom: 20px;
 }
 
-.main_grid_1_2_text button{
-  border: solid rgba(255, 255, 255, 0.781) 1px;
-  padding: 7px 30px;
-  margin-top: 34px;
+.name_g_1, .name_g_2{
   font-family: "Bellota Text";
   color: white;
+  font-size: 23px;
+  text-align: center;
+  padding: 0px 25px;
+  padding-bottom: 10px;
 }
+
+.disc_g_1, .disc_g_2 {
+  font-family: "Bellota Text";
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  padding: 0px 15px 20px 15px;
+}
+
+.but_vis_g_1, .but_vis_g_2{
+  font-family: "Bellota Text";
+  color: white;
+  font-size: 20px;
+  border: solid rgba(255, 255, 255, 0.742) 0.7px;
+  padding: 15px 20%;
+}
+
+.button_g_1, .button_g_2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+.okno_g_2 {
+  width: auto;
+  height: auto;
+  max-width: 350px;
+  border-radius: 0 0 10% 10%;
+  background: rgb(37, 37, 37);
+  border: solid rgba(255, 255, 255, 0.425) 1px;
+}
+
+.img_g_2 img{
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 0 0 15% 15%;
+  padding-bottom: 20px;
+}
+
+.name_g_1 {
+  font-family: "Bellota Text";
+  color: white;
+  font-size: 23px;
+  text-align: center;
+  padding: 0px 25px;
+  padding-bottom: 10px;
+}
+
