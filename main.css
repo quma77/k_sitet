@@ -253,3 +253,129 @@ h2 {
   font-size: 18px;
   padding-bottom: 90px;
 }
+
+.l_text_name_m3, .r_text_name_m3{
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 28px;
+}
+
+
+
+
+.r_text_name_m3 {
+text-align: right;
+}
+
+
+.l_text_desc_m3, .r_text_desc_m3{
+  font-family: "Bellota Text";
+  color: white;
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.r_text_desc_m3 {
+  text-align: right;
+  margin-left: auto;
+}
+
+
+.img_main_3 img{
+  position: absolute;
+  z-index: -1;
+  filter: opacity(10%);
+  left: 0%;
+  max-height: 600px;
+  width: 100%;
+}
+
+
+.img_main_3 {
+  padding-bottom: 10%;
+}
+
+.main_4 {
+  padding-top: 100px;
+}
+
+.statistik {
+  display: flex;
+  justify-content: space-between;
+}
+
+.viz_m_4 {
+  width: 300px;
+  height: 300px;
+  background: rgb(38, 38, 38);
+  border-radius: 50%;
+  border: solid rgba(255, 255, 255, 0.49) 0.8px;
+}
+
+.num_stat {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 165px;
+  font-family: "Oswald", sans-serif;
+  font-size: 55px;
+}
+
+.name_stat {
+  color: rgba(255, 255, 255, 0.666);
+  font-family: "Bellota Text";
+  font-size: 18px;
+  max-width: 200px;
+  margin: 0px auto;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.main_5 {
+  padding-top: 100px;
+}
+
+.phone_m_5 {
+  width: 100vw;
+  position: absolute;
+  left: 0px;
+  height: 200px;
+  background: rgb(54, 54, 54);
+}
+
+
+
+
+
+
+
+
+
+slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  animation: slideAnimation 25s linear infinite;
+}
+
+.slide {
+  margin-right: 100px;
+}
+
+@keyframes slideAnimation {
+  0% {
+      transform: translateX(-30%);
+  }
+  100% {
+      transform: translateX(-280%); /* С учетом 4 видимых слайдов */
+  }
+}
+
+img {
+  width: 200px;
+}
