@@ -38,7 +38,7 @@ const observer = new IntersectionObserver(entries => {
           const target = +counter.getAttribute('data-count');
           const count = +counter.innerText;
           
-          const speed = 500; // Скорость анимации (в миллисекундах)
+          const speed = 50; // Скорость анимации (в миллисекундах)
           const inc = target / speed;
           
           if (count < target) {

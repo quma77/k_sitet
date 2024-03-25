@@ -61,6 +61,11 @@ body {
   font-size: 19px;
 }
 
+#select {
+  border: solid rgba(255, 255, 255, 0.271) 1px;
+  padding: 10px;
+}
+
 .main_m li a {
   color: white;
   font-family: "Bellota Text";
@@ -118,6 +123,7 @@ h1 {
 .send_message button {
   border: solid rgba(255, 255, 255, 0.356) 1px;
   padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.162);
 }
 
 
@@ -187,7 +193,6 @@ h2 {
 }
 
 .button_g_1, .button_g_2 {
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -234,6 +239,7 @@ h2 {
 
 .main_2_sec img {
   border: solid rgba(255, 255, 255, 0.381) 3px;
+  width: 28vw
 }
 
 
@@ -378,4 +384,58 @@ slider-container {
 
 img {
   width: 200px;
+}
+
+
+
+
+.hr_6 {
+  width: 1920px;
+  position: absolute;
+  left: 0px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.331);
+}
+
+.m_6 p {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: white;
+  font-size: 30px;
+}
+
+.m_6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+
+.m_6 button {
+  font-family: "Bellota Text";
+  color: white;
+  font-size: 20px;
+  padding: 10px 50px;
+  margin-top: 20px;
+  border: solid rgba(255, 255, 255, 0.6) 1px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  padding-top: 50px;
+}
+
+.footer pre {
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+.footer img {
+  width: 100px;
+  height: 100px;
 }
