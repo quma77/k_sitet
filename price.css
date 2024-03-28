@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
 
 body {
   padding: 40px 250px;
@@ -130,26 +132,99 @@ text-decoration: underline;
 }
 
 
-.main_1 p {
-    font-family: "Bellota Text";
-    color: white;
-    padding-top:  30px;
-    font-size: 20px;
-}
 
-.hr_m1_m2 {
-  width: 90%;
-  height: 1px;
-  background: white;
-  margin: 50px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.h2_hr {
+    width: 100vw;
+    height: 1px;
+    background: white;
+    position: absolute;
+    left: 0px;
+    margin: 50px 0px;
 }
 
 h3 {
+    font-family: "Bellota Text"; 
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.name_and_price {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+
+.okno_main_1 {
+  padding-top: 20px;
+  display: flex;
+}
+
+
+.name_div div, .price_div div{
+  width: 700px;
+  height: 70px;
+  border: solid 1px white;
+  align-content: center;
+}
+
+.name_div p, .price_div p {
+ color: white;
+ padding: 0px 10px;
+ text-align: left;
+  font-size: 20px;
+ font-family: "Tenor Sans", sans-serif;
+}
+
+h4 {
   font-family: "Bellota Text";
   color: white;
-  padding-top:  30px;
+  text-align: center;
   font-size: 20px;
+  padding-top: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footeer_hr {
   width: 100%;
@@ -159,9 +234,6 @@ h3 {
   position: absolute;
   left: -10px;
 }
-
-
-
 
 .footer {
   display: flex;

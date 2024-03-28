@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
 
 body {
   padding: 40px 250px;
   background: rgb(32, 32, 32);
-  overflow-x: hidden;
+  overflow: hidden;
   margin: auto;
-  color: rgb(33, 33, 33);
   max-width: 1900px;
 }
 .header{
@@ -130,26 +131,117 @@ text-decoration: underline;
 }
 
 
-.main_1 p {
+.h2_hr {
+    width: 100vw;
+    height: 1px;
+    background: white;
+    position: absolute;
+    left: 0px;
+    margin: 50px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.start {
+    border: solid 1px white;
+    width: auto;
+    height: 620px;
+    margin-top: 50px;
+    align-content: center;
+}
+
+
+.del {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+form {
     font-family: "Bellota Text";
+    width: 50%;
+    margin: 0 auto;
     color: white;
-    padding-top:  30px;
     font-size: 20px;
 }
 
-.hr_m1_m2 {
-  width: 90%;
-  height: 1px;
-  background: white;
-  margin: 50px;
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
 }
 
-h3 {
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
+    width: 500px;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: white;
+    border: solid rgba(255, 255, 255, 0.589) 1px;
+}
+
+
+
+input[type=submit] {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#comment {
+    height: 300px;
+}
+
+.left img {
+    width: 350px;
+padding-left: 150px;
+}
+
+
+textarea {
+  resize: none;
+}
+
+.back a{
+  position: absolute;
+  top: 30px;
+  left: 30px;
   font-family: "Bellota Text";
   color: white;
-  padding-top:  30px;
   font-size: 20px;
 }
+
+
+#issue {
+  background: rgb(32, 32, 32);
+  border: solid rgba(255, 255, 255, 0.589) 1px;
+  width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footeer_hr {
   width: 100%;
@@ -159,9 +251,6 @@ h3 {
   position: absolute;
   left: -10px;
 }
-
-
-
 
 .footer {
   display: flex;
