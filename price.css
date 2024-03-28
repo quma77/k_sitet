@@ -163,6 +163,7 @@ text-decoration: underline;
     height: 1px;
     background: white;
     position: absolute;
+    z-index: -1;
     left: 0px;
     margin: 50px 0px;
 }
