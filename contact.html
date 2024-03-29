@@ -1,22 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Похуй</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contac.css">
+    <title>О нас</title>
 </head>
 <body>
-    <h1>Не готова еще соре</h1>
-  <div style="display: flex;"> 
-    <h2>1 + 1 = </h2> <input type="text">
-    <button id='replyButton' onclick="handleReplyClick()">Ответить</button> </div>
-    <img src="https://media1.tenor.com/m/n9Hl8cEdNV4AAAAC/ricardo-milos.gif" style="width: 500px;"  alt="">
+    <header class="header">
+        <div class="top_header">
+          <div class="ttop_header">
+            <div class="logo"><a href="index.html"><img src="/img/logo.png" alt=""></a>  </div>
+            <div class="menu_nav">
+              <ul class="main_m">
+                <li><a href="index.html">Главная</a></li>
+                <li class="dropdown">
+                  <a href="#">Восстановить данные</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="drop_html/jd.html">с жёсткого диска</a></li>
+                    <li><a href="drop_html/vjd.html">с внешнего жёсткого диска</a></li>
+                    <li><a href="drop_html/ssd.html">с SSD</a></li>
+                    <li><a href="drop_html/usb.html">с USB-флешки</a></li>
+                    <li><a href="drop_html/kp.html">с карты памяти</a></li>
+                    <li><a href="drop_html/phone.html">с телефона</a></li>
+                    <li><a href="drop_html/big_phone.html">с планшета</a></li>
+                    <li><a href="drop_html/raid.html">c RAID-массива</a></li>
+                    <li><a href="drop_html/od.html">с оптического диска</a></li>
+                  </ul>
+                </li>
+                <li><a href="info.html">О нас</a></li>
+                <li><a href="price.html">Цены</a></li>
+                <li><a href="contact.html" id="select">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="send_message">
+              <button onclick="window.location.href='call_message.html'">Оставить заявку</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h2>КОНТАКТЫ</h2>
+        <div class="text_adres">
+            <div>
+                <p class="name">Адерс:</p>
+                <p class="text_aders">Проспект Хасана Туфана, 17 <br> Набережные Челны, Республика Татарстан</p>
+            </div>
+            <div>
+                <p class="name">График работы:</p>
+                <p class="text_grph">ПН-ПТ с 9:30 до 20:00 <br>
+                    СБ-ВС с 11:00 до 18:00</p>
+            </div>
+            <div>
+                <p class="name">Ссылки:</p>
+                <p class="text_href">
+                    Telegram: <a href="https://t.me/qumaQq">https://t.me/qumaQq <br>
+                    Телефон: +7-999-999-99-99</a>
+                </p>
+            </div>
+        </div>
+        <div class="cart">
+            <hr>
 
-    <script>
-        function handleReplyClick() {
-    alert("НИХУЯ!");
-    window.location.href = "index.html"; // Замените "anotherpage.html" на URL страницы, на которую хотите перейти
-}
-    </script>
+            <div id="map"></div>
+
+            <script>
+                function initMap() {
+                    var location = {lat: 55.697795, lng: 52.335662}; // координаты адреса
+        
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 16,
+                        center: location
+                    });
+        
+                    var marker = new google.maps.Marker({
+                        position: location,
+                        map: map
+                    });
+                }
+            </script>
+        
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=ВАШ_API_КЛЮЧ&callback=initMap"></script>
+
+            <hr>
+        </div>
+      </main>
+      <hr class="footeer_hr">
+      <footer class="footer">
+        <div><pre>Call - +7 999 999 99 99</pre></div>
+        <div><pre>Gamil - pizda@mail.ru</pre></div>
+        <div><img src="img/logo.png" alt=""></div>
+        <div><pre>City - Набережные челны</pre></div>
+        <div><pre>Чета еще въебать нада</pre></div>
+      </footer>
+      <script src="main.js"></script>
 </body>
 </html>

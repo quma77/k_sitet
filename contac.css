@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+
+body {
+  padding: 40px 250px;
+  background: rgb(32, 32, 32);
+  overflow-x: hidden;
+  margin: auto;
+  color: rgb(33, 33, 33);
+  max-width: 1900px;
+}
+.header{
+    padding-bottom: 50px;
+}
+.ttop_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  color: white;
+}
+
+.image-container {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  z-index: -1;
+  filter: opacity(25%);
+  display: flex;
+  top: 0px;
+  left: 0px;
+}
+
+.image-container img {
+  width: 100%; /* Задаем ширину изображения 100% от ширины родительского контейнера */
+  height: 600px; /* Позволяет изображению сохранить пропорции */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-family: "Bellota Text";
+}
+
+.dropdown-menu a:hover {
+  text-decoration: underline;
+}
+
+.main_m {
+  display: flex;
+  gap: 50px;
+  font-size: 19px;
+}
+
+#select {
+  border: solid rgba(255, 255, 255, 0.271) 1px;
+  padding: 10px;
+}
+
+.main_m li a {
+  color: white;
+  font-family: "Bellota Text";
+}
+
+.send_message button {
+  font-family: "Bellota Text";
+}
+
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+.logo img{
+    width: 120px;
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.send_message button {
+  border: solid rgba(255, 255, 255, 0.356) 1px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.162);
+}
+
+
+h2 {
+  font-family: "Bellota Text";
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.dropdown-menu {
+display: none;
+position: absolute;
+background-color: #333;
+color: #fff;
+padding: 10px;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-family: "Bellota Text";
+}
+
+.dropdown-menu a:hover {
+text-decoration: underline;
+}
+
+
+
+
+
+
+.text_adres{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    padding-top: 50px;
+}
+
+
+
+.text_adres hr{
+    width: 1px;
+    height: 120px;
+    background: white;
+}
+
+.text_adres p {
+    font-size: 22px;
+    font-family: "Bellota Text";
+}
+
+.name {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.text_aders {
+    text-align: right;
+}
+
+.text_href {
+    text-align: left;
+}
+
+.text_href a {
+    color: white;
+}
+
+
+
+.cart hr {
+    width: 100vw;
+    height: 1px;
+    background: white;
+    position: absolute;
+    left: 0px;
+    margin: 0px 10px;
+}
+
+.cart {
+    padding-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footeer_hr {
+  width: 100%;
+  height: 1px;
+  margin: 40px 0px;
+  background: white;
+  position: absolute;
+  left: -10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  padding-top: 80px;
+}
+
+.footer pre {
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+.footer img {
+  width: 100px;
+  height: 100px;
+}
