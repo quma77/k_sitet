@@ -447,3 +447,59 @@ img {
   width: 100px;
   height: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (width < 1600px) {
+  body {
+    padding: 40px 150px;
+    max-width: 1600px;
+    overflow-x: hidden;
+  }
+}
+
+
+
+@media screen and (width < 1300px) {
+  body {
+    padding: 40px 50px;
+    max-width: 1300px;
+  }
+  .footer {
+    gap: 70px;
+  }
+}
+
+@media screen and (width < 1100px) {
+  body {
+    padding: 20px 50px;
+    max-width: 1300px;
+  }
+  .main_m {
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+  }
+  .desc_s2 {
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+  .main_2_sec img {
+    width: 430px
+  }
+}
+
+@media screen and (width < 800px) {
+
+}
