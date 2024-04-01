@@ -199,6 +199,7 @@ h2 {
 
 .button_g_1, .button_g_2 {
   margin-bottom: 20px;
+  align-content: center;
 }
 
 
@@ -244,7 +245,7 @@ h2 {
 
 .main_2_sec img {
   border: solid rgba(255, 255, 255, 0.381) 3px;
-  width: 530px
+  width: 430px
 }
 
 
