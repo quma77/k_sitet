@@ -75,15 +75,6 @@ body {
   font-family: "Bellota Text";
 }
 
-.header_hr hr {
-  width: 200px;
-  height: 100px;
-  color: white;
-  position: relative;
-}
-.header_hr {
-  position: relative;
-}
 
 /*  main  */
 
@@ -196,6 +187,22 @@ h2 {
   border: solid rgba(255, 255, 255, 0.742) 0.7px;
   padding: 15px 20%;
 }
+
+
+.disc_g_2 {
+  padding-bottom: 110px;
+}
+
+.disc_g_1 {
+  padding-bottom: 110px;
+  
+}
+
+.disc_g_1 {
+  padding-bottom: 84px;
+}
+
+
 
 .button_g_1, .button_g_2 {
   margin-bottom: 20px;
@@ -501,6 +508,118 @@ img {
   }
 }
 
-@media screen and (width < 800px) {
+@media screen and (width > 949px) {
+  .mobile_header{
+    display: none;
+  }
+}
 
+@media screen and (width < 950px) {
+  .ttop_header {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none; 
+    width: 55vw;
+    background: #333;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+
+.mobile-menu-icon p{
+    cursor: pointer;
+    width: 20px;
+    height: 3px;
+    color: white;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.mobile-menu-icon {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mobile-menu-icon img{
+width: 110px;
+}
+
+.mobile_header li, a{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  padding: 5px 30px;
+}
+
+.mobile_header button{
+  padding: 10px 10vw;
+  border: solid rgba(255, 255, 255, 0.707) 1px;
+}
+
+.main_header {
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+  max-width: 900px;
+}
+
+h1 {
+  padding-bottom: 100px;
+}
+
+.grid_1, .grid_2{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5%;
+  max-width: 850px;
+}
+
+.okno_g_1 {
+  width: 90vw;
+  height: auto;
+  max-width: 850px;
+  border-radius: 15px 0 0 15px;
+  background: rgb(37, 37, 37);
+  border: solid rgba(255, 255, 255, 0.425) 1px;
+}
+
+
+.okno_g_1 img{
+  display: none;
+}
+
+.disc_g_1 {
+  padding-bottom: 20px;
+}
+.disc_g_2 {
+  padding-bottom: 0px;
+}
+
+.okno_g_2 {
+  width: 90vw;
+  height: auto;
+  max-width: 850px;
+  border-radius: 15px 0 0 15px;
+  background: rgb(37, 37, 37);
+  border: solid rgba(255, 255, 255, 0.425) 1px;
+}
+
+.okno_g_2 img{
+  display: none;
+}
+
+.grid_2{
+  padding-top: 100px;
+}
+
+.but_vis_g_2{
+  margin-top: 15px;
+}
 }

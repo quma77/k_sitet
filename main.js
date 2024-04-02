@@ -21,6 +21,60 @@ document.addEventListener("click", function (event) {
 
 
 
+document
+  .querySelector(".mobile_header .dropdown_m a")
+  .addEventListener("click", function () {
+    var dropdownMenu = document.querySelector(".dropdown-menu_m");
+    dropdownMenu.style.display =
+      dropdownMenu.style.display === "block" ? "none" : "block";
+  });
+
+document.addEventListener("click", function (event) {
+  var dropdownMenu = document.querySelector(".dropdown-menu_m");
+  var dropdownToggle = document.querySelector(".mobile_header .dropdown_m a");
+
+  if (
+    event.target !== dropdownMenu &&
+    event.target !== dropdownToggle &&
+    !dropdownMenu.contains(event.target)
+  ) {
+    dropdownMenu.style.display = "none";
+  }
+});
+
+
+
+
+
+
+
+
+
+const mobileMenuIcon = document.querySelector('.m_but');
+const mobileMenu = document.querySelector('.mobile-menu');
+let isMenuOpen = false;
+
+mobileMenuIcon.addEventListener('click', () => {
+    if (!isMenuOpen) {
+        mobileMenu.style.display = 'block';
+        isMenuOpen = true;
+    } else {
+        mobileMenu.style.display = 'none';
+        isMenuOpen = false;
+    }
+});
+
+// Добавляем обработчик клика вне меню
+document.addEventListener('click', (event) => {
+    const target = event.target;
+    // Проверяем, был ли клик вне меню и само меню открыто
+    if (!mobileMenu.contains(target) && !mobileMenuIcon.contains(target) && isMenuOpen) {
+        mobileMenu.style.display = 'none';
+        isMenuOpen = false;
+    }
+});
+
+
 
 
 const options = {
