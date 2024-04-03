@@ -365,19 +365,19 @@ text-align: right;
   left: 0px;
   height: 200px;
   background: rgb(54, 54, 54);
+  z-index: -1;
 }
 
 
-
-
-
-
-
+hr {
+  z-index: -1;
+}
 
 
 slider-container {
   overflow: hidden;
   width: 100%;
+  z-index: -1;
 }
 
 .slider {
@@ -457,6 +457,15 @@ img {
 }
 
 
+.m_footer pre {
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+.m_footer img {
+  width: 100px;
+  height: 100px;
+}
 
 
 
@@ -527,16 +536,18 @@ img {
     top: 0px;
     left: 0px;
     height: 100%;
+    z-index: 999;
 }
 
 .mobile-menu-icon p{
     cursor: pointer;
     width: 20px;
     height: 3px;
-    color: white;
+    color: rgba(255, 255, 255, 0.772);
     font-size: 60px;
     margin: 0px;
     padding: 0px;
+
 }
 
 
@@ -622,4 +633,113 @@ h1 {
 .but_vis_g_2{
   margin-top: 15px;
 }
+
+.footer {
+  gap: 50px;
+}
+
+.footer {
+  gap: 20px;
+}
+}
+
+@media screen and (width < 800px) {
+
+  .image-container img {
+    height: 500px; /* Позволяет изображению сохранить пропорции */
+  }
+  
+  .header{
+    padding-bottom: 70px;
+}
+  
+
+.main_2_sec img {
+  display: none;
+}
+
+.viz_m_4 {
+  width: 200px;
+  height: 200px;
+}
+
+.num_stat {
+  height: 110px;
+  font-size: 45px;
+}
+
+.name_stat {
+  font-size: 14px;
+  max-width: 200px;
+}
+
+h1 {
+  padding-bottom: 80px;
+}
+
+}
+
+@media screen and (width < 700px) {
+  .footer {
+    display: none;
+  }
+  .m_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  h1 {
+    padding-bottom: 40px;
+  }
+  .main_header {
+    padding-top: 0px;
+  }
+  .image-container img {
+    height: 450px; /* Позволяет изображению сохранить пропорции */
+  }
+  .statistik {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+  }
+  .viz_m_4 {
+    width: 300px;
+    height: 200px;
+  }
+  .name_stat {
+    font-size: 14px;
+  }
+  .num_stat {
+    height: 110px;
+    font-size: 45px;
+  }
+  h2 {
+    padding-top: 40px;
+  }
+  .okno_g_1, .okno_g_2 {
+    width: 85vw;
+  }
+  .grid_2 {
+    margin-top: 50px;
+  }
+}
+
+
+@media screen and (width > 700px) {
+  .m_footer {
+    display: none;
+  }
+
+}
+
+@media screen and (width < 550px) {
+  .m_6 p{
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  
+
 }
