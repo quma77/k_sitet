@@ -382,11 +382,8 @@ slider-container {
 
 .slider {
   display: flex;
-  animation: slideAnimation 25s linear infinite;
-}
-
-.slide {
   margin-right: 100px;
+  animation: slideAnimation 25s linear infinite;
 }
 
 @keyframes slideAnimation {
@@ -677,6 +674,14 @@ h1 {
   padding-bottom: 80px;
 }
 
+
+.mobile_header li, a{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  padding: 5px 30px;
+}
+
 }
 
 @media screen and (width < 700px) {
@@ -738,8 +743,168 @@ h1 {
     font-size: 20px;
   }
   h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   
+  .main_header p {
+    font-size: 15px;
+  }
 
+  .image-container img {
+    height: 350px; /* Позволяет изображению сохранить пропорции */
+  }
+  .mobile-menu-icon img {
+    width: 80px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  .okno_g_1, .okno_g_2 {
+    width: 80vw;
+  }
+
+  .name_g_1, .name_g_2{
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .disc_g_1, .disc_g_2{
+    font-size: 15px;
+  }
+
+  .main_3 {
+    padding-top: 20px;
+  }
+
+  .r_text_desc_m3, .l_text_desc_m3{
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+
+  .img_main_3 {
+    display: none;
+  }
+
+  .main_4 {
+    padding-top: 20px;
+  }
+  .slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 50%;
+    max-width: 70%;
+    justify-content: center;
+    margin: 0px auto;
+  }
+
+  #delite_phone {
+    display: none;
+  }
+
+  .slider img{
+    width: 120px;
+  }
+
+
+  @keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0); /* С учетом 4 видимых слайдов */
+    }
+  }
+  
+  .dropdown-menu_m a{
+    font-size: 18px;
+  }
+
+  .mobile-menu {
+    width: 70vw;
+}
+
+.mobile_header li, a{
+  padding: 5px 15px;
+}
+
+.m_footer {
+  gap: 30px;
+  font-size: 10px;
+}
+
+.m_6 img {
+  display: none;
+}
+
+.m_6{
+  text-align: center;
+}
+
+.phone_m_5 {
+  height: 960px;
+}
+}
+
+
+@media screen and (width < 550px) {
+  .m_but p{
+    font-size: 40px;
+  }
+
+  .mobile_header img {
+    width: 50px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .main_header p {
+    display: none;
+  }
+
+  .image-container img {
+    height: 170px; /* Позволяет изображению сохранить пропорции */
+  }
+
+  .header {
+    padding-bottom: 0px;
+
+  }
+
+  h2 {
+    padding: 10px 0px;
+    font-size: 10px;
+  }
+
+  .name_g_1, .name_g_2 {
+    font-size: 8px;
+  }
+
+  .disc_g_1, .disc_g_2 {
+    font-size: 7px;
+  }
+  .but_vis_g_1 ,.but_vis_g_2 {
+    font-size: 9px;
+    padding: 2px 10px;
+  }
+
+  .okno_g_1, .okno_g_2 {
+    width: 70vw;
+  }
+
+  .grid_2 {
+    padding-top: 20px;
+  }
+
+  .name_s2 {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .desc_s2 {
+    font-size: 9px;
+
+  }
 }
