@@ -915,7 +915,7 @@ h1 {
   }
   .l_text_desc_m3, .r_text_desc_m3 {
     font-size: 0.9em;
-    width: 60%;
+    width: 90%;
     text-align: justify;
   }
   .m_footer pre {
@@ -949,5 +949,39 @@ h1 {
   }
   .mobile-menu {
     width: 85vw;
+} 
+.m_footer {
+  gap: 5px;
 }
 }
+
+
+
+@media screen and (width < 420px) {
+
+.m_footer {
+  gap: 0px;
+}
+
+
+.num_stat {
+  height: 110px;
+  font-size: 45px;
+}
+
+.name_stat {
+  font-size: 11px;
+  max-width: 200px;
+}
+
+.viz_m_4 {
+  width: 180px;
+  height: 180px;
+}
+
+.statistik {
+  padding-top: 60px;
+}
+}
+
+
