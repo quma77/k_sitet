@@ -173,11 +173,10 @@ text-decoration: underline;
 
 .cart hr {
     width: 100vw;
-    height: 1px;
+    height: 3px;
     background: white;
     position: absolute;
     left: 0px;
-    margin: 0px 10px;
 }
 
 .cart {
@@ -192,6 +191,10 @@ text-decoration: underline;
 
 
 
+
+.FAQ {
+  padding-top: 50px;
+}
 
 
 

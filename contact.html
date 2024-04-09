@@ -64,29 +64,34 @@
         </div>
         <div class="cart">
             <hr>
-
-            <div id="map"></div>
-
-            <script>
-                function initMap() {
-                    var location = {lat: 55.697795, lng: 52.335662}; // координаты адреса
-        
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 16,
-                        center: location
-                    });
-        
-                    var marker = new google.maps.Marker({
-                        position: location,
-                        map: map
-                    });
-                }
-            </script>
-        
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=ВАШ_API_КЛЮЧ&callback=initMap"></script>
-
+                <script src="https://api-maps.yandex.ru/2.1/?apikey=23c89798-f6c0-444c-be9e-2b4ca301aff1&lang=ru_RU"></script>
+                <style>
+                    #map {
+                        width: 100%;
+                        height: 400px;
+                    }
+                </style>
+                <div id="map"></div>
+                <script>
+                    ymaps.ready(init);
+                    function init() {
+                        var myMap = new ymaps.Map("map", {
+                            center: [55.739795, 52.405649], // Координаты Набережные Челны
+                            zoom: 15
+                        });
+                        // Добавляем метку на карту
+                        var myPlacemark = new ymaps.Placemark([55.739795, 52.405649], {
+                            balloonContent: 'Проспект Мира, дом 49а, Набережные Челны'
+                        });
+                        myMap.geoObjects.add(myPlacemark);
+                    }
+                </script>     
             <hr>
         </div>
+        <div class="FAQ">
+          <h2>FAQ</h2>
+        </div>
+
       </main>
       <hr class="footeer_hr">
       <footer class="footer">

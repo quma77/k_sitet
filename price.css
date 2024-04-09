@@ -446,15 +446,7 @@ width: 110px;
 }
 
 @media screen and (width < 700px) {
-  .footer {
-    display: none;
-  }
-  .m_footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-  }
+
 
 
   .name_div div{
@@ -474,6 +466,60 @@ width: 110px;
   .name_and_price {
     max-width: 450px;
   }
+   .footer {
+    display: none;
+  }
+  h1 {
+    padding-bottom: 40px;
+  }
+  .main_header {
+    padding-top: 0px;
+  }
+  .image-container img {
+    height: 450px; /* Позволяет изображению сохранить пропорции */
+  }
+  .statistik {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+  }
+  .viz_m_4 {
+    width: 300px;
+    height: 200px;
+  }
+  .name_stat {
+    font-size: 14px;
+  }
+  .num_stat {
+    height: 110px;
+    font-size: 45px;
+  }
+  h2 {
+    padding-top: 40px;
+  }
+  .okno_g_1, .okno_g_2 {
+    width: 85vw;
+  }
+  .grid_2 {
+    margin-top: 50px;
+  }
+
+  .m_footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    justify-content: center;
+    gap: 30px;
+  }
+  .m_footer img {
+    width: 100px;
+  }
+  
+  .m_footer pre {
+    font-family: "Oswald", sans-serif;
+  } 
+
 }
 
 
@@ -525,10 +571,7 @@ width: 110px;
   padding: 5px 15px;
 }
 
-.m_footer {
-  gap: 30px;
-  font-size: 10px;
-}
+
 
 }
 
@@ -542,12 +585,7 @@ width: 110px;
     display: none;
   }
 
-  .m_footer pre {
-    font-size: 1.3em;
-  }
-  .m_footer {
-    gap: 20px;
-  }
+
 
   .name_div div{
     width: 53vw;
@@ -590,7 +628,47 @@ width: 110px;
   .mobile-menu {
     width: 85vw;
 } 
+
+
+
+.name_div div{
+  width: 63vw;
+  height: 100px;
+}
+
+.name_div p{
+  font-size: 13px;
+}
+
+.price_div div {
+  width: 90px;
+  height: 100px;
+}
+
+
+.price_div p {
+  font-size: 15px;
+}
+
+.name_and_price {
+  max-width: 350px;
+}
+
 .m_footer {
-  gap: 5px;
+  gap: 0px;
+}
+
+body {
+  padding: 0px 5px;
+  
+}
+
+.okno_main_1 {
+  justify-content: center;
+}
+
+.name_and_price {
+  justify-content: center;
+  gap: 150px;
 }
 }

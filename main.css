@@ -189,9 +189,7 @@ h2 {
 }
 
 
-.disc_g_2 {
-  padding-bottom: 110px;
-}
+
 
 .disc_g_1 {
   padding-bottom: 110px;
@@ -210,8 +208,24 @@ h2 {
 }
 
 
+#but1-p {
+  margin-top: 90px;
+}
+
+#but2-p {
+  margin-top: 64px;
+}
 
 
+#but3-p {
+  margin-top: 92px;
+}
+
+
+
+#but4-p {
+  margin-top: 100px;
+}
 
 
 .okno_g_2 {
@@ -474,7 +488,6 @@ img {
 
 
 
-
 @media screen and (width < 1600px) {
   body {
     padding: 40px 150px;
@@ -534,6 +547,17 @@ img {
     left: 0px;
     height: 100%;
     z-index: 999;
+}
+
+
+#but1-p {
+  margin-top: 10px;
+}#but2-p {
+  margin-top: 10px;
+}#but3-p {
+  margin-top: 10px;
+}#but4-p {
+  margin-top: 10px;
 }
 
 .mobile-menu-icon p{
@@ -842,6 +866,7 @@ h1 {
 }
 
 .phone_m_5 {
+  width: 100vw;
   height: 960px;
 }
 }
@@ -937,6 +962,17 @@ h1 {
   .grid_2 {
     padding-top: 50px;
   }
+
+  .slider {
+    gap: 0px 15px;
+  }
+
+
+.phone_m_5 {
+  width: 100vw;
+  height: 840px;
+}
+  
 }
 
 
@@ -953,6 +989,23 @@ h1 {
 .m_footer {
   gap: 5px;
 }
+
+body {
+  padding: 0px 15px;
+  
+}
+
+.image-container {
+  top: 55px;
+  left: 0px;
+}
+
+.image-container img {
+  height: 130px; /* Позволяет изображению сохранить пропорции */
+}
+
+
+
 }
 
 
