@@ -180,9 +180,7 @@ h3 {
 .price div {
     height: 60px;
     align-items: center;
-    width: 1200px;
     display: flex;
-    margin: 0px auto;
     border: solid rgba(255, 255, 255, 0.573) 1px;
 }
 
@@ -243,3 +241,344 @@ h3 {
   width: 100px;
   height: 100px;
 }
+
+
+
+
+.m_footer pre {
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+.m_footer img {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+@media screen and (width < 1600px) {
+  body {
+    padding: 40px 150px;
+    max-width: 1600px;
+    overflow-x: hidden;
+  }
+}
+
+
+@media screen and (width < 1500px) {
+  .text_table {
+    display: none;
+  }
+  .price div{
+    width: auto;
+  }
+  .num {
+    width: 50%;
+    text-align: center;
+  }
+  .problem{
+    width: 100%;
+    text-align: center;
+  }
+  .price_text{
+    width: 50%;
+    text-align: center;
+  }
+}
+
+
+@media screen and (width < 1300px) {
+  body {
+    padding: 40px 50px;
+    max-width: 1300px;
+  }
+  .footer {
+    gap: 70px;
+  }
+}
+
+@media screen and (width < 1100px) {
+  body {
+    padding: 20px 50px;
+    max-width: 1300px;
+  }
+}
+
+@media screen and (width > 949px) {
+  .mobile_header{
+    display: none;
+  }
+}
+
+@media screen and (width < 950px) {
+  .ttop_header {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none; 
+    width: 55vw;
+    background: #333;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: 999;
+}
+
+
+.mobile-menu-icon p{
+    cursor: pointer;
+    width: 20px;
+    height: 3px;
+    color: rgba(255, 255, 255, 0.772);
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.mobile-menu-icon {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mobile-menu-icon img{
+width: 110px;
+}
+
+.mobile_header li, a{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  padding: 5px 30px;
+}
+
+.mobile_header button{
+  padding: 10px 10vw;
+  border: solid rgba(255, 255, 255, 0.707) 1px;
+}
+
+.main_header {
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+  max-width: 900px;
+} 
+.footer {
+  gap: 20px;
+}
+
+
+}
+
+@media screen and (width < 800px) {
+
+h1 {
+  padding-bottom: 20px;
+}
+
+.mobile_header li, a{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  padding: 5px 30px;
+}
+
+.photo_text {
+  display: grid;
+  text-align: center;
+  gap: 40px;
+}
+
+h3 {
+  text-align: justify;
+
+}
+
+.num {
+  height: 100px;
+  width: 50%;
+  text-align: center;
+}
+.problem{
+  height: 100px;
+
+  width: 100%;
+  text-align: center;
+}
+.price_text{
+  height: 100px;
+
+  width: 50%;
+  text-align: center;
+}
+
+.price div {
+  height: 100px;
+}
+
+
+}
+
+@media screen and (width < 700px) {
+  .footer {
+    display: none;
+  }
+  .m_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  h1 {
+    padding-bottom: 20px;
+  }
+  .main_header {
+    padding-top: 0px;
+  }
+}
+
+
+@media screen and (width > 700px) {
+  .m_footer {
+    display: none;
+  }
+}
+
+@media screen and (width < 550px) {
+  
+  h1 {
+    font-size: 25px;
+  }
+  .mobile-menu-icon img {
+    width: 80px;
+  }
+
+  
+  .dropdown-menu_m a{
+    font-size: 18px;
+  }
+
+  .mobile-menu {
+    width: 70vw;
+}
+
+.mobile_header li, a{
+  padding: 5px 15px;
+}
+
+.m_footer {
+  gap: 30px;
+  font-size: 10px;
+}
+
+.num {
+  height: 120px;
+  width: 50%;
+  text-align: center;
+}
+.problem{
+  height: 120px;
+
+  width: 100%;
+  text-align: center;
+}
+.price_text{
+  height: 120px;
+  width: 50%;
+  text-align: center;
+}
+
+.price div {
+  height: 120px;
+}
+
+}
+
+
+@media screen and (width < 550px) {
+  .mobile_header img {
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    padding: 10px 0px;
+    font-size: 1em;
+  }
+
+  .m_footer pre {
+    font-size: 1.3em;
+  }
+  .m_footer {
+    gap: 20px;
+  }
+
+  .num {
+    height: 150px;
+    width: 50%;
+    text-align: center;
+  }
+  .problem{
+    height: 150px;
+  
+    width: 100%;
+    text-align: center;
+  }
+  .price_text{
+    height: 150px;
+  
+    width: 50%;
+    text-align: center;
+  }
+  
+  .price div {
+    height: 150px;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  .price_text {
+    font-size: 0.8em;
+  }
+  
+}
+@media screen and (width < 460px) {
+  .mobile-menu {
+    width: 85vw;
+} 
+.m_footer {
+  gap: 5px;
+}
+
+h3 {
+  max-width: 90vw;
+}
+
+body {
+  padding: 0px 15px;
+}
+
+}
+
+@media screen and (width < 420px) {
+.m_footer {
+  gap: 0px;
+}
+}
+
+
