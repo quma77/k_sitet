@@ -303,7 +303,7 @@ h4 {
   }
   .main_m {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     font-size: 16px;
   }
 }
@@ -609,22 +609,7 @@ width: 110px;
 
 
 
-
 @media screen and (width < 460px) {
-
-  .grid_2 {
-    padding-top: 50px;
-  }
-}
-
-
-
-
-@media screen and (width < 460px) {
-
-  .grid_2 {
-    padding-top: 80px;
-  }
   .mobile-menu {
     width: 85vw;
 } 
@@ -656,6 +641,10 @@ width: 110px;
 
 .m_footer {
   gap: 0px;
+}
+
+.m_footer pre{
+  font-size: 0.7em;
 }
 
 body {

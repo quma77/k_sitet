@@ -990,6 +990,11 @@ h1 {
   gap: 5px;
 }
 
+.m_footer pre{
+  font-size: 1.1em;
+}
+
+
 body {
   padding: 0px 15px;
   

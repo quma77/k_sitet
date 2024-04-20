@@ -21,22 +21,6 @@ body {
   color: white;
 }
 
-.image-container {
-  width: 100%;
-  position: absolute;
-  padding: 0px;
-  z-index: -1;
-  filter: opacity(25%);
-  display: flex;
-  top: 0px;
-  left: 0px;
-}
-
-.image-container img {
-  width: 100%; /* Задаем ширину изображения 100% от ширины родительского контейнера */
-  height: 600px; /* Позволяет изображению сохранить пропорции */
-}
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -231,18 +215,6 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .footeer_hr {
   width: 100%;
   height: 1px;
@@ -269,3 +241,226 @@ textarea {
   width: 100px;
   height: 100px;
 }
+
+
+@media screen and (width < 1600px) {
+  body {
+    padding: 40px 150px;
+    max-width: 1600px;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (width < 1300px) {
+  body {
+    padding: 40px 50px;
+    max-width: 1300px;
+  }
+  .footer {
+    gap: 70px;
+  }
+}
+
+
+@media screen and (width < 1450px) {
+.start {
+  border: solid 1px rgba(255, 255, 255, 0);
+}
+}
+
+
+@media screen and (width < 1150px) {
+  .del {
+    display: grid;
+    position: relative;
+    padding-top: 550px;
+  }
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .del_but {
+    display: none;
+  }
+
+  .footer{
+    padding-top: 700px;
+  }
+
+  .h2_hr{
+    margin-top: 650px;
+  }
+}
+
+
+
+@media screen and (width < 1100px) {
+  body {
+    padding: 20px 50px;
+    max-width: 1300px;
+  }
+}
+
+
+
+@media screen and (width < 950px) {
+.footer {
+  gap: 20px;
+}
+}
+
+
+@media screen and (width < 699px) {
+  .footer {
+    display: none;
+  }
+  .m_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 600px;
+  }
+}
+
+
+@media screen and (width > 700px) {
+  .m_footer {
+    display: none;
+  }
+
+}
+
+@media screen and (width < 600px) {
+  .del img {
+    display: none;
+  }
+  .del{
+    gap: 0px;
+    padding-top: 250px;
+  }
+
+  .m_footer {
+    margin-top: 240px;
+  }
+
+  .h2_hr{
+    margin-top: 280px;
+  }
+  }
+
+
+@media screen and (width < 550px) {
+.m_footer {
+  gap: 30px;
+  font-size: 10px;
+}
+}
+
+
+@media screen and (width < 540px) {
+  input[type=text],
+  input[type=tel],
+  input[type=email],
+  textarea {
+      width: 480px;
+      margin: 0px auto;
+  }
+  #issue {
+    width: 480px;
+  }
+  }
+
+@media screen and (width < 550px) {
+  h2 {
+    font-size: 1.3em;
+  } 
+  .m_footer pre {
+    font-size: 1.3em;
+  }
+  .m_footer {
+    gap: 20px;
+  }
+}
+
+@media screen and (width < 520px) {
+  input[type=text],
+  input[type=tel],
+  input[type=email],
+  textarea {
+      width: 440px;
+      margin: 0px auto;
+  }
+  #issue {
+    width: 440px;
+  }
+  }
+
+
+  @media screen and (width < 450px) {
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    textarea {
+        width: 380px;
+        margin: 0px auto;
+    }
+    #issue {
+      width: 380px;
+    }
+    }
+
+
+    @media screen and (width < 400px) {
+      input[type=text],
+      input[type=tel],
+      input[type=email],
+      textarea {
+          width: 340px;
+          margin: 0px auto;
+      }
+      #issue {
+        width: 340px;
+      }
+      }
+
+@media screen and (width < 460px) {
+  .m_footer {
+    gap: 5px;
+  }
+  body {
+    padding: 0px 15px;
+    
+  }
+  h2 {
+    font-size: 0.9em;
+
+  }
+}
+
+
+
+@media screen and (width < 420px) {
+.m_footer {
+  gap: 0px;
+}
+
+
+}
+.m_footer{
+  padding-top: 80px;
+}
+
+.m_footer pre {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 1.1em;
+}
+.m_footer img {
+  width: 100px;
+  height: 100px;
+}
+
+
+

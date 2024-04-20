@@ -22,22 +22,6 @@ body {
   color: white;
 }
 
-.image-container {
-  width: 100%;
-  position: absolute;
-  padding: 0px;
-  z-index: -1;
-  filter: opacity(25%);
-  display: flex;
-  top: 0px;
-  left: 0px;
-}
-
-.image-container img {
-  width: 100%; /* Задаем ширину изображения 100% от ширины родительского контейнера */
-  height: 600px; /* Позволяет изображению сохранить пропорции */
-}
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -96,13 +80,11 @@ h1 {
 }
 
 
-
 .send_message button {
   border: solid rgba(255, 255, 255, 0.356) 1px;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.162);
 }
-
 
 h2 {
     font-family: "Bellota Text";
@@ -111,7 +93,6 @@ h2 {
     font-size: 30px;
     padding: 30px 0px;
 }
-
 
 .dropdown-menu {
 display: none;
@@ -131,20 +112,6 @@ padding: 10px;
 .dropdown-menu a:hover {
 text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 h3 {
@@ -210,20 +177,6 @@ h3 {
   font-size: 17px;
 }
 
-
-
-
-
-
-.footeer_hr {
-  width: 100%;
-  height: 1px;
-  margin: 40px 0px;
-  background: white;
-  position: absolute;
-  left: -10px;
-}
-
 .footer {
   display: flex;
   justify-content: center;
@@ -241,9 +194,6 @@ h3 {
   width: 100px;
   height: 100px;
 }
-
-
-
 
 .m_footer pre {
   font-family: "Oswald", sans-serif;
@@ -300,6 +250,11 @@ h3 {
   }
   .footer {
     gap: 70px;
+  }
+  .main_m {
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
   }
 }
 
@@ -377,7 +332,6 @@ width: 110px;
   gap: 20px;
 }
 
-
 }
 
 @media screen and (width < 800px) {
@@ -417,7 +371,6 @@ h3 {
 }
 .price_text{
   height: 100px;
-
   width: 50%;
   text-align: center;
 }
@@ -463,7 +416,6 @@ h3 {
     width: 80px;
   }
 
-  
   .dropdown-menu_m a{
     font-size: 18px;
   }
@@ -567,6 +519,10 @@ h3 {
 
 h3 {
   max-width: 90vw;
+}
+
+.m_footer pre{
+  font-size: 1.1em;
 }
 
 body {

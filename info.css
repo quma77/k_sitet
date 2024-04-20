@@ -20,22 +20,6 @@ body {
   color: white;
 }
 
-.image-container {
-  width: 100%;
-  position: absolute;
-  padding: 0px;
-  z-index: -1;
-  filter: opacity(25%);
-  display: flex;
-  top: 0px;
-  left: 0px;
-}
-
-.image-container img {
-  width: 100%; /* Задаем ширину изображения 100% от ширины родительского контейнера */
-  height: 600px; /* Позволяет изображению сохранить пропорции */
-}
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -93,14 +77,11 @@ h1 {
     padding: 0px;
 }
 
-
-
 .send_message button {
   border: solid rgba(255, 255, 255, 0.356) 1px;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.162);
 }
-
 
 h2 {
   font-family: "Bellota Text";
@@ -108,7 +89,6 @@ h2 {
   text-align: center;
   font-size: 30px;
 }
-
 
 .dropdown-menu {
 display: none;
@@ -163,9 +143,6 @@ h3 {
   left: -10px;
 }
 
-
-
-
 .footer {
   display: flex;
   justify-content: center;
@@ -184,16 +161,6 @@ h3 {
   height: 100px;
 }
 
-
-
-
-
-
-
-
-
-
-
 @media screen and (width < 1600px) {
   body {
     padding: 40px 150px;
@@ -201,8 +168,6 @@ h3 {
     overflow-x: hidden;
   }
 }
-
-
 
 @media screen and (width < 1300px) {
   body {
@@ -218,6 +183,11 @@ h3 {
   body {
     padding: 20px 50px;
     max-width: 1300px;
+  }
+  .main_m {
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
   }
 }
 
@@ -259,7 +229,6 @@ h3 {
     padding: 0px;
 
 }
-
 
 .mobile-menu-icon {
   display: flex;
@@ -339,7 +308,6 @@ width: 110px;
 }
 
 @media screen and (width < 550px) {
-
   .hr_m1_m2 {
     width: 75%;
   }
@@ -403,11 +371,6 @@ width: 110px;
   }
 }
 
-
-
-
-
-
 @media screen and (width < 460px) {
   .hr_m1_m2 {
     width: 68%;
@@ -434,14 +397,13 @@ width: 110px;
   }
 
   h3 {
-    font-size: 0.9em;
+    font-size: 0.8em;
 
   }
 
   .main_1 p {
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
-
 
 }
 
@@ -453,8 +415,6 @@ width: 110px;
 }
 }
 
-
-
 .m_footer{
   padding-top: 80px;
 }
@@ -463,12 +423,10 @@ width: 110px;
 .m_footer pre {
   font-family: "Oswald", sans-serif;
   color: white;
+  font-size: 1.1em;
 }
 
 .m_footer img {
   width: 100px;
   height: 100px;
 }
-
-
-
