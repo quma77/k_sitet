@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
 
 body {
   padding: 40px 250px;
@@ -10,7 +9,7 @@ body {
   margin: auto;
   max-width: 1900px;
 }
-.header{
+.header {
   padding-bottom: 50px;
 }
 .ttop_header {
@@ -60,7 +59,6 @@ body {
   font-family: "Bellota Text";
 }
 
-
 h1 {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -70,22 +68,18 @@ h1 {
   text-align: center;
 }
 
-
-.logo img{
-    width: 120px;
-    height: 120px;
-    margin: 0px;
-    padding: 0px;
+.logo img {
+  width: 120px;
+  height: 120px;
+  margin: 0px;
+  padding: 0px;
 }
-
-
 
 .send_message button {
   border: solid rgba(255, 255, 255, 0.356) 1px;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.162);
 }
-
 
 h2 {
   font-family: "Bellota Text";
@@ -94,111 +88,96 @@ h2 {
   font-size: 30px;
 }
 
-
 .dropdown-menu {
-display: none;
-position: absolute;
-background-color: #333;
-color: #fff;
-padding: 10px;
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
 }
 
 .dropdown-menu a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    font-family: "Bellota Text";
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-family: "Bellota Text";
 }
 
 .dropdown-menu a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 .h2_hr {
-    width: 100vw;
-    height: 1px;
-    background: white;
-    position: absolute;
-    left: 0px;
-    margin: 50px 0px;
+  width: 100vw;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 0px;
+  margin: 50px 0px;
 }
-
-
-
-
-
-
-
-
-
 
 .start {
-    border: solid 1px white;
-    width: auto;
-    height: 620px;
-    margin-top: 50px;
-    align-content: center;
+  border: solid 1px white;
+  width: auto;
+  height: 620px;
+  margin-top: 50px;
+  align-content: center;
 }
 
-
 .del {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 30px;
 }
 
 form {
-    font-family: "Bellota Text";
-    width: 50%;
-    margin: 0 auto;
-    color: white;
-    font-size: 20px;
+  font-family: "Bellota Text";
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
 }
-
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    color: white;
+  display: block;
+  margin-bottom: 5px;
+  color: white;
 }
 
-input[type=text],
-input[type=tel],
-input[type=email],
+input[type="text"],
+input[type="tel"],
+input[type="email"],
 textarea {
-    width: 500px;
-    padding: 5px;
-    margin-bottom: 10px;
-    color: white;
-    border: solid rgba(255, 255, 255, 0.589) 1px;
+  width: 500px;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: white;
+  border: solid rgba(255, 255, 255, 0.589) 1px;
 }
 
-
-
-input[type=submit] {
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    color: white;
+input[type="submit"] {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  color: white;
 }
 
 #comment {
-    height: 300px;
+  height: 300px;
 }
 
 .left img {
-    width: 350px;
-padding-left: 150px;
+  width: 350px;
+  padding-left: 150px;
 }
-
 
 textarea {
   resize: none;
 }
 
-.back a{
+.back a {
   position: absolute;
   top: 30px;
   left: 30px;
@@ -207,13 +186,11 @@ textarea {
   font-size: 20px;
 }
 
-
 #issue {
   background: rgb(32, 32, 32);
   border: solid rgba(255, 255, 255, 0.589) 1px;
   width: 500px;
 }
-
 
 .footeer_hr {
   width: 100%;
@@ -242,7 +219,6 @@ textarea {
   height: 100px;
 }
 
-
 @media screen and (width < 1600px) {
   body {
     padding: 40px 150px;
@@ -261,20 +237,24 @@ textarea {
   }
 }
 
-
 @media screen and (width < 1450px) {
-.start {
-  border: solid 1px rgba(255, 255, 255, 0);
+  .start {
+    border: solid 1px rgba(255, 255, 255, 0);
+  }
 }
-}
-
 
 @media screen and (width < 1150px) {
+  h2 {
+    padding-top: 80px;
+  }
+
   .del {
     display: grid;
     position: relative;
-    padding-top: 550px;
+    padding-top: 10px;
+    gap: 0px;
   }
+
   body {
     overflow-x: hidden;
     overflow-y: scroll;
@@ -284,16 +264,14 @@ textarea {
     display: none;
   }
 
-  .footer{
-    padding-top: 700px;
+  .footer {
+    padding-top: 500px;
   }
 
-  .h2_hr{
-    margin-top: 650px;
+  .h2_hr {
+    margin-top: 480px;
   }
 }
-
-
 
 @media screen and (width < 1100px) {
   body {
@@ -302,14 +280,11 @@ textarea {
   }
 }
 
-
-
 @media screen and (width < 950px) {
-.footer {
-  gap: 20px;
+  .footer {
+    gap: 20px;
+  }
 }
-}
-
 
 @media screen and (width < 699px) {
   .footer {
@@ -320,62 +295,54 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    margin-top: 600px;
+    margin-top: 430px;
   }
 }
 
-
-@media screen and (width > 700px) {
+@media screen and (width > 701px) {
   .m_footer {
     display: none;
   }
-
 }
 
 @media screen and (width < 600px) {
   .del img {
     display: none;
   }
-  .del{
-    gap: 0px;
-    padding-top: 250px;
-  }
 
   .m_footer {
-    margin-top: 240px;
+    margin-top: 260px;
   }
 
-  .h2_hr{
-    margin-top: 280px;
+  .h2_hr {
+    margin-top: 300px;
   }
-  }
-
+}
 
 @media screen and (width < 550px) {
-.m_footer {
-  gap: 30px;
-  font-size: 10px;
+  .m_footer {
+    gap: 30px;
+    font-size: 10px;
+  }
 }
-}
-
 
 @media screen and (width < 540px) {
-  input[type=text],
-  input[type=tel],
-  input[type=email],
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
   textarea {
-      width: 480px;
-      margin: 0px auto;
+    width: 480px;
+    margin: 0px auto;
   }
   #issue {
     width: 480px;
   }
-  }
+}
 
 @media screen and (width < 550px) {
   h2 {
     font-size: 1.3em;
-  } 
+  }
   .m_footer pre {
     font-size: 1.3em;
   }
@@ -385,45 +352,43 @@ textarea {
 }
 
 @media screen and (width < 520px) {
-  input[type=text],
-  input[type=tel],
-  input[type=email],
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
   textarea {
-      width: 440px;
-      margin: 0px auto;
+    width: 440px;
+    margin: 0px auto;
   }
   #issue {
     width: 440px;
   }
+}
+
+@media screen and (width < 450px) {
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 380px;
+    margin: 0px auto;
   }
+  #issue {
+    width: 380px;
+  }
+}
 
-
-  @media screen and (width < 450px) {
-    input[type=text],
-    input[type=tel],
-    input[type=email],
-    textarea {
-        width: 380px;
-        margin: 0px auto;
-    }
-    #issue {
-      width: 380px;
-    }
-    }
-
-
-    @media screen and (width < 400px) {
-      input[type=text],
-      input[type=tel],
-      input[type=email],
-      textarea {
-          width: 340px;
-          margin: 0px auto;
-      }
-      #issue {
-        width: 340px;
-      }
-      }
+@media screen and (width < 400px) {
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 340px;
+    margin: 0px auto;
+  }
+  #issue {
+    width: 340px;
+  }
+}
 
 @media screen and (width < 460px) {
   .m_footer {
@@ -431,24 +396,18 @@ textarea {
   }
   body {
     padding: 0px 15px;
-    
   }
   h2 {
     font-size: 0.9em;
-
   }
 }
 
-
-
 @media screen and (width < 420px) {
+  .m_footer {
+    gap: 0px;
+  }
+}
 .m_footer {
-  gap: 0px;
-}
-
-
-}
-.m_footer{
   padding-top: 80px;
 }
 
@@ -461,6 +420,3 @@ textarea {
   width: 100px;
   height: 100px;
 }
-
-
-

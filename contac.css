@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
 
 body {
   padding: 40px 250px;
@@ -11,8 +10,8 @@ body {
   color: rgb(33, 33, 33);
   max-width: 1900px;
 }
-.header{
-    padding-bottom: 50px;
+.header {
+  padding-bottom: 50px;
 }
 .ttop_header {
   display: flex;
@@ -61,7 +60,6 @@ body {
   font-family: "Bellota Text";
 }
 
-
 h1 {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -71,22 +69,18 @@ h1 {
   text-align: center;
 }
 
-
-.logo img{
-    width: 120px;
-    height: 120px;
-    margin: 0px;
-    padding: 0px;
+.logo img {
+  width: 120px;
+  height: 120px;
+  margin: 0px;
+  padding: 0px;
 }
-
-
 
 .send_message button {
   border: solid rgba(255, 255, 255, 0.356) 1px;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.162);
 }
-
 
 h2 {
   font-family: "Bellota Text";
@@ -95,93 +89,76 @@ h2 {
   font-size: 30px;
 }
 
-
 .dropdown-menu {
-display: none;
-position: absolute;
-background-color: #333;
-color: #fff;
-padding: 10px;
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
 }
 
 .dropdown-menu a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    font-family: "Bellota Text";
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-family: "Bellota Text";
 }
 
 .dropdown-menu a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-
-
-
-
-.text_adres{
-    color: white;
-    display: flex;
-    justify-content: center;
-    gap: 180px;
-    padding-top: 50px;
+.text_adres {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  padding-top: 50px;
 }
-
-
-
 
 .text_adres p {
-    font-size: 22px;
-    font-family: "Bellota Text";
+  font-size: 22px;
+  font-family: "Bellota Text";
 }
 
 .name {
-    text-align: center;
-    padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .text_aders {
-    text-align: right;
+  text-align: right;
 }
 
 .text_href {
-    text-align: left;
+  text-align: left;
 }
 
 .text_href a {
-    color: white;
+  color: white;
 }
 
-
-
 .cart hr {
-    width: 100vw;
-    height: 3px;
-    background: white;
-    position: absolute;
-    left: 0px;
+  width: 100vw;
+  height: 3px;
+  background: white;
+  position: absolute;
+  left: 0px;
 }
 
 .cart {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
-
-.text_grph, .text_aders, .text_href{
+.text_grph,
+.text_aders,
+.text_href {
   white-space: nowrap;
 }
-
-
-
-
-
-
 
 .FAQ {
   padding-top: 50px;
 }
-
 
 .question {
   cursor: pointer;
@@ -195,6 +172,9 @@ text-decoration: underline;
   color: white;
   font-size: 25px;
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .answer {
@@ -209,21 +189,12 @@ text-decoration: underline;
   align-content: center;
   color: rgb(0, 0, 0);
   background: rgba(255, 255, 255, 0.829);
-  font-size: 0,8vw;
+  font-size: 0, 8vw;
   padding: 0px 100px;
+  display: flex;
+
+  align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footeer_hr {
   width: 100%;
@@ -252,11 +223,6 @@ text-decoration: underline;
   height: 100px;
 }
 
-
-
-
-
-
 @media screen and (width < 1600px) {
   body {
     padding: 40px 150px;
@@ -264,8 +230,6 @@ text-decoration: underline;
     overflow-x: hidden;
   }
 }
-
-
 
 @media screen and (width < 1300px) {
   body {
@@ -275,14 +239,14 @@ text-decoration: underline;
   .footer {
     gap: 70px;
   }
-  .text_adres{
+  .text_adres {
     gap: 100px;
-}
+  }
 
-.answer {
-  font-size: 15px;
-  padding: 0px 20px;
-}
+  .answer {
+    font-size: 15px;
+    padding: 0px 20px;
+  }
 }
 
 @media screen and (width < 1100px) {
@@ -295,10 +259,9 @@ text-decoration: underline;
     gap: 40px;
     font-size: 16px;
   }
-
 }
 @media screen and (width > 949px) {
-  .mobile_header{
+  .mobile_header {
     display: none;
   }
 }
@@ -312,7 +275,7 @@ text-decoration: underline;
     padding: 0px;
   }
   .mobile-menu {
-    display: none; 
+    display: none;
     width: 55vw;
     background: #333;
     position: fixed;
@@ -320,9 +283,9 @@ text-decoration: underline;
     left: 0px;
     height: 100%;
     z-index: 999;
-}
+  }
 
-.mobile-menu-icon p{
+  .mobile-menu-icon p {
     cursor: pointer;
     width: 20px;
     height: 3px;
@@ -330,76 +293,75 @@ text-decoration: underline;
     font-size: 60px;
     margin: 0px;
     padding: 0px;
+  }
 
-}
+  .mobile-menu-icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+  }
 
-.mobile-menu-icon {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
-}
+  .mobile-menu-icon img {
+    width: 110px;
+  }
 
-.mobile-menu-icon img{
-width: 110px;
-}
+  .mobile_header li,
+  a {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    padding: 5px 30px;
+  }
 
-.mobile_header li, a{
-  color: white;
-  font-family: "Oswald", sans-serif;
-  font-size: 30px;
-  padding: 5px 30px;
-}
+  .mobile_header button {
+    padding: 10px 10vw;
+    border: solid rgba(255, 255, 255, 0.707) 1px;
+  }
 
-.mobile_header button{
-  padding: 10px 10vw;
-  border: solid rgba(255, 255, 255, 0.707) 1px;
-}
+  .footer {
+    gap: 20px;
+  }
 
-.footer {
-  gap: 20px;
-}
+  .text_adres {
+    display: grid;
+  }
 
-.text_adres {
-  display: grid;
-}
+  .text_aders {
+    text-align: center;
+  }
 
-.text_aders {
-  text-align: center;
-}
+  .text_adres div {
+    text-align: center;
+  }
 
-.text_adres div{
-  text-align: center;
-}
+  .text_adres a {
+    font-size: 22px;
+    font-family: "Bellota Text";
+  }
 
-.text_adres a{
-  font-size: 22px;
-  font-family: "Bellota Text";
-}
+  .question {
+    font-size: 20px;
+    margin-top: 40px;
+  }
 
-.question {
-  font-size: 20px;
-  margin-top: 40px;
-}
-
-.answer {
-  height: 80px;
-}
-
+  .answer {
+    height: auto;
+  }
 }
 
 @media screen and (width < 800px) {
-
-.mobile_header li, a{
-  color: white;
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  padding: 5px 30px;
-}
+  .mobile_header li,
+  a {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    padding: 5px 30px;
+  }
 }
 
 @media screen and (width < 700px) {
-   .footer {
+  .footer {
     display: none;
   }
   h1 {
@@ -423,61 +385,55 @@ width: 110px;
   .m_footer img {
     width: 100px;
   }
-  
+
   .m_footer pre {
     font-family: "Oswald", sans-serif;
-  } 
-
+  }
 }
-
 
 @media screen and (width > 700px) {
   .m_footer {
     display: none;
   }
-
 }
 
 @media screen and (width < 680px) {
   .answer {
-    height: 130px;
     padding: 0px 10px;
     font-size: 15px;
   }
 
-.question {
-  font-size: 20px;
-  margin-top: 20px;
+  .question {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .text_adres {
+    gap: 20px;
+  }
 }
 
-.text_adres {
-  gap: 20px;
-}
-
-}
-
-@media screen and (width < 550px) { 
+@media screen and (width < 550px) {
   .mobile-menu-icon img {
     width: 80px;
   }
 
-  .dropdown-menu_m a{
+  .dropdown-menu_m a {
     font-size: 18px;
   }
 
   .mobile-menu {
     width: 70vw;
-}
+  }
 
-.mobile_header li, a{
-  padding: 5px 15px;
+  .mobile_header li,
+  a {
+    padding: 5px 15px;
+  }
 }
-
-}
-
 
 @media screen and (width < 550px) {
-  .m_but p{
+  .m_but p {
     font-size: 40px;
   }
   .m_footer pre {
@@ -485,19 +441,16 @@ width: 110px;
     color: white;
     font-size: 0.7em;
   }
-
 }
-
-
 
 @media screen and (width < 460px) {
   .mobile-menu {
     width: 85vw;
-} 
-.m_footer {
-  gap: 0px;
-}
-body {
-  padding: 0px 5px;
-}
+  }
+  .m_footer {
+    gap: 0px;
+  }
+  body {
+    padding: 0px 5px;
+  }
 }

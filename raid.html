@@ -1,198 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="drop.css">
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="drop.css" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
     <title>Восстановить RAID хранилища</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="top_header">
-          <div class="ttop_header">
-            <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a>  </div>
-            <div class="menu_nav">
-              <ul class="main_m">
-                <li><a href="index.html">Главная</a></li>
-                <li class="dropdown">
-                  <a href="#" id="select">Восстановить данные</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="jd.html">с жёсткого диска</a></li>
-                    <li><a href="vjd.html">с внешнего жёсткого диска</a></li>
-                    <li><a href="ssd.html">с SSD</a></li>
-                    <li><a href="usb.html">с USB-флешки</a></li>
-                    <li><a href="kp.html">с карты памяти</a></li>
-                    <li><a href="phone.html">с телефона</a></li>
-                    <li><a href="big_phone.html">с планшета</a></li>
-                    <li><a href="raid.html">c RAID-массива</a></li>
-                    <li><a href="od.html">с оптического диска</a></li>
-                  </ul>
-                </li>
-                <li><a href="info.html">О нас</a></li>
-                <li><a href="price.html">Цены</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-              </ul>
-            </div>
-            <div class="send_message">
-              <button onclick="window.location.href='call_message.html'">Оставить заявку</button>
-            </div>
+      <div class="top_header">
+        <div class="ttop_header">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="" /></a>
           </div>
-          <div class="mobile_header">
-            <div class="mobile-menu-icon">
-              <div class="m_but"> <p>&#8801;</p> </div>
-              <div><img src="img/logo.png" alt=""></div>
-            </div>
-            <nav class="mobile-menu">
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li class="dropdown_m">
-                      <a href="#">Восстановить данные</a>
-                      <ul class="dropdown-menu_m">
-                        <li><a href="jd.html">с жёсткого диска</a></li>
-                        <li><a href="vjd.html">с внешнего жёсткого диска</a></li>
-                        <li><a href="ssd.html">с SSD</a></li>
-                        <li><a href="usb.html">с USB-флешки</a></li>
-                        <li><a href="kp.html">с карты памяти</a></li>
-                        <li><a href="phone.html">с телефона</a></li>
-                        <li><a href="big_phone.html">с планшета</a></li>
-                        <li><a href="raid.html">c RAID-массива</a></li>
-                        <li><a href="od.html">с оптического диска</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="info.html">О нас</a></li>
-                    <li><a href="price.html">Цены</a></li>
-                    <li><a href="contact.html">Контакты</a></li>
-                    <li><button onclick="window.location.href='call_message.html'">Оставить заявку</button></li>
+          <div class="menu_nav">
+            <ul class="main_m">
+              <li><a href="index.html">Главная</a></li>
+              <li class="dropdown">
+                <a href="#" id="select">Восстановить данные</a>
+                <ul class="dropdown-menu">
+                  <li><a href="jd.html">с жёсткого диска</a></li>
+                  <li><a href="vjd.html">с внешнего жёсткого диска</a></li>
+                  <li><a href="ssd.html">с SSD</a></li>
+                  <li><a href="usb.html">с USB-флешки</a></li>
+                  <li><a href="kp.html">с карты памяти</a></li>
+                  <li><a href="phone.html">с телефона</a></li>
+                  <li><a href="big_phone.html">с планшета</a></li>
+                  <li><a href="raid.html">c RAID-массива</a></li>
+                  <li><a href="od.html">с оптического диска</a></li>
                 </ul>
-            </nav>
-            
+              </li>
+              <li><a href="info.html">О нас</a></li>
+              <li><a href="price.html">Цены</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="send_message">
+            <button onclick="window.location.href='call_message.html'">
+              Оставить заявку
+            </button>
           </div>
         </div>
-      </header>
+        <div class="mobile_header">
+          <div class="mobile-menu-icon">
+            <div class="m_but"><p>&#8801;</p></div>
+            <div><img src="img/logo.png" alt="" /></div>
+          </div>
+          <nav class="mobile-menu">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li class="dropdown_m">
+                <a href="#">Восстановить данные</a>
+                <ul class="dropdown-menu_m">
+                  <li><a href="jd.html">с жёсткого диска</a></li>
+                  <li><a href="vjd.html">с внешнего жёсткого диска</a></li>
+                  <li><a href="ssd.html">с SSD</a></li>
+                  <li><a href="usb.html">с USB-флешки</a></li>
+                  <li><a href="kp.html">с карты памяти</a></li>
+                  <li><a href="phone.html">с телефона</a></li>
+                  <li><a href="big_phone.html">с планшета</a></li>
+                  <li><a href="raid.html">c RAID-массива</a></li>
+                  <li><a href="od.html">с оптического диска</a></li>
+                </ul>
+              </li>
+              <li><a href="info.html">О нас</a></li>
+              <li><a href="price.html">Цены</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+              <li>
+                <button onclick="window.location.href='call_message.html'">
+                  Оставить заявку
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <main>
-    <h1>ВОССТАНОВЛЕНИЕ ДАННЫХ С RAID ХРАНИЛИЩА</h1>
-    <div class="photo_text">
+      <h1>ВОССТАНОВЛЕНИЕ ДАННЫХ С RAID ХРАНИЛИЩА</h1>
+      <div class="photo_text">
         <div>
-            <img src="img/raid.jpg" alt="">
+          <img src="img/raid.jpg" alt="" />
         </div>
         <div>
-            <h3>Надёжное хранение информации для любой компании, не важно сколь большой или маленькой, она не была, играет очень важную роль. И степень важности этой информации в полной мере можно ощутить, когда доступ к этой информации, оказывается потерян. А бэкапов нет….или они старые и не ликвидные…..
-<br><br>
-              Специально, для того чтобы избежать подобных проблем, очень часто используются RAID хранилища различных конфигураций. Но, ни одна техника не может служить вечно и устройство хранения данных может выйти из строя, если не проводить мониторинг состояния жёстких дисков и самого массива, не уделять внимания рабочей системе резервного копирования.</h3>
+          <h3>
+            Надёжное хранение информации для любой компании, не важно сколь
+            большой или маленькой, она не была, играет очень важную роль. И
+            степень важности этой информации в полной мере можно ощутить, когда
+            доступ к этой информации, оказывается потерян. А бэкапов нет….или
+            они старые и не ликвидные….. <br /><br />
+            Специально, для того чтобы избежать подобных проблем, очень часто
+            используются RAID хранилища различных конфигураций. Но, ни одна
+            техника не может служить вечно и устройство хранения данных может
+            выйти из строя, если не проводить мониторинг состояния жёстких
+            дисков и самого массива, не уделять внимания рабочей системе
+            резервного копирования.
+          </h3>
         </div>
-    </div>
-    <h3>В нашей лаборатории, мы часто сталкиваемся с разрушением данных в различных хранилищах, где хранение информации организовано в виде RAID-массива. Сам по себе такой себе такой массив является системой распределения данных по нескольким дискам. Как именно данные распределяются по дискам, зависит от уровня массива. Наиболее распространёнными являются:
-<br><br>
-      0 или Stripe — данные читаются и пишутся одновременно на несколько накопителей. Соответственно вырастает скорость чтения\записи, но одновременно с этим, снижается надёжность, т.к. при выходе одно из накопителей, весь массив перестаёт функционировать. Может состоять из минимум 2-х дисков.
-      1 или Mirror (зеркало) — один накопитель является точной копией второго (если говорить о массиве из 2-х дисков), но поскольку второй диск копирует первый, то скорость работы с массивом равна скорости работы с одним диском. Но, поскольку данные дублируются на 2-х дисках, при выходе одного из строя, массив не разрушается и продолжает функционировать.
-      5 уровень — может состоять минимально из 3-х дисков. На каждый из дисков последовательно записывается блок, содержащий данные и контрольную сумму. Получил широкое распространение, по причине своей экономичности — для сохранения отказоустойчивости, объём массива уменьшается не на 50% по сравнению с уровнем 1, а всего на 25% (если говорить о массиве из 4-х дисков). При выходе из строя любого диска, его можно заменить новым и восстановить данные при помощи операции «исключающее если (XOR)».
-      Наша компания осуществляет восстановление данных с RAID массивов различных уровней и модификаций — 10, 1, 5, 5EE.
-      <br><br>
-      Также мы работаем с внешними, сетевыми хранилищами, NAS, DAS</h3>
-    <h2>Стоимость</h2>
-    <div class="text_table">
+      </div>
+      <h3>
+        В нашей лаборатории, мы часто сталкиваемся с разрушением данных в
+        различных хранилищах, где хранение информации организовано в виде
+        RAID-массива. Сам по себе такой себе такой массив является системой
+        распределения данных по нескольким дискам. Как именно данные
+        распределяются по дискам, зависит от уровня массива. Наиболее
+        распространёнными являются: <br /><br />
+        0 или Stripe — данные читаются и пишутся одновременно на несколько
+        накопителей. Соответственно вырастает скорость чтения\записи, но
+        одновременно с этим, снижается надёжность, т.к. при выходе одно из
+        накопителей, весь массив перестаёт функционировать. Может состоять из
+        минимум 2-х дисков. 1 или Mirror (зеркало) — один накопитель является
+        точной копией второго (если говорить о массиве из 2-х дисков), но
+        поскольку второй диск копирует первый, то скорость работы с массивом
+        равна скорости работы с одним диском. Но, поскольку данные дублируются
+        на 2-х дисках, при выходе одного из строя, массив не разрушается и
+        продолжает функционировать. 5 уровень — может состоять минимально из 3-х
+        дисков. На каждый из дисков последовательно записывается блок,
+        содержащий данные и контрольную сумму. Получил широкое распространение,
+        по причине своей экономичности — для сохранения отказоустойчивости,
+        объём массива уменьшается не на 50% по сравнению с уровнем 1, а всего на
+        25% (если говорить о массиве из 4-х дисков). При выходе из строя любого
+        диска, его можно заменить новым и восстановить данные при помощи
+        операции «исключающее если (XOR)». Наша компания осуществляет
+        восстановление данных с RAID массивов различных уровней и модификаций —
+        10, 1, 5, 5EE.
+        <br /><br />
+        Также мы работаем с внешними, сетевыми хранилищами, NAS, DAS
+      </h3>
+      <h2>Стоимость</h2>
+      <div class="text_table">
         <p>#</p>
         <p>Проблема</p>
         <p>Стоимость, руб.</p>
-    </div>
-    <div class="price">
-  <div>
-    <p class="num">
-1
-    </p>
-    <p class="problem">
-      Диагностика:
-    </p>
-    <p class="price_text">
-Бесплатно
-    </p>
-  </div>
-  <div>
-    <p class="num">
-2
-    </p>
-    <p class="problem">
-      Доставка накопителя по городу Набережные Челны:
-    </p>
-    <p class="price_text">
-Бесплатно
-    </p>
-  </div>
-  <div>
-    <p class="num">
-3
-    </p>
-    <p class="problem">
-      Копирование информации на носитель заказчика:	
-    </p>
-    <p class="price_text">
-Бесплатно
-    </p>
-  </div>
-  <div>
-    <p class="num">
-4
-    </p>
-    <p class="problem">
-      Хранение резервной копии данных в течении 3-х дней:
-    </p>
-    <p class="price_text">
-Бесплатно
-    </p>
-  </div>
-  <div>
-    <p class="num">
-5
-    </p>
-    <p class="problem">
-      Логические неисправности (диски физически исправны, известен порядок и тип массива, массив в статусе Degrade):
-    </p>
-    <p class="price_text">
-      от 4500 руб
-    </p>
-  </div>
-  <div>
-    <p class="num">
-6
-    </p>
-    <p class="problem">
-      Логические неисправности (диски физически исправны, но не известен порядок, тип, массив в статусе Degrade):
-    </p>
-    <p class="price_text">
-      от 6500 руб
-    </p>
-  </div>
-  <div>
-    <p class="num">
-7
-    </p>
-    <p class="problem">
-      Логические и физические повреждения (неисправен один или несколько накопителей, массив в статусе Degrade):
-    </p>
-    <p class="price_text">
-      от 9500 руб
-    </p>
-  </div>
-    </div>
-    <button>Связаться с нами</button>
+      </div>
+      <div class="price">
+        <div>
+          <p class="num">1</p>
+          <p class="problem">Диагностика:</p>
+          <p class="price_text">Бесплатно</p>
+        </div>
+        <div>
+          <p class="num">2</p>
+          <p class="problem">Доставка накопителя по городу Набережные Челны:</p>
+          <p class="price_text">Бесплатно</p>
+        </div>
+        <div>
+          <p class="num">3</p>
+          <p class="problem">Копирование информации на носитель заказчика:</p>
+          <p class="price_text">Бесплатно</p>
+        </div>
+        <div>
+          <p class="num">4</p>
+          <p class="problem">
+            Хранение резервной копии данных в течении 3-х дней:
+          </p>
+          <p class="price_text">Бесплатно</p>
+        </div>
+        <div>
+          <p class="num">5</p>
+          <p class="problem">
+            Логические неисправности (диски физически исправны, известен порядок
+            и тип массива, массив в статусе Degrade):
+          </p>
+          <p class="price_text">от 4500 руб</p>
+        </div>
+        <div>
+          <p class="num">6</p>
+          <p class="problem">
+            Логические неисправности (диски физически исправны, но не известен
+            порядок, тип, массив в статусе Degrade):
+          </p>
+          <p class="price_text">от 6500 руб</p>
+        </div>
+        <div>
+          <p class="num">7</p>
+          <p class="problem">
+            Логические и физические повреждения (неисправен один или несколько
+            накопителей, массив в статусе Degrade):
+          </p>
+          <p class="price_text">от 9500 руб</p>
+        </div>
+      </div>
+      <button>Связаться с нами</button>
     </main>
-    <hr class="h2_hr">
+    <hr class="h2_hr" />
     <footer class="footer">
       <div><pre>Call - +7 999 999 99 99</pre></div>
       <div><pre>Gamil - pizda@mail.ru</pre></div>
-      <div><img src="img/logo.png" alt=""></div>
+      <div><img src="img/logo.png" alt="" /></div>
       <div><pre>City - Набережные челны</pre></div>
-      <div><pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00</pre></div>
+      <div>
+        <pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00</pre>
+      </div>
     </footer>
     <footer class="m_footer">
-      <div><div><pre>Call - +7 (917)277 64 98</pre></div>
-      <div><pre>Gamil - pizda@mail.ru</pre></div></div>
-      <div> <div><img src="img/logo.png" alt=""></div></div>
-      <div> <div><pre>City - Набережные челны</pre></div>
-      <div><pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00 </pre></div></div>
+      <div>
+        <div><pre>Call - +7 (917)277 64 98</pre></div>
+        <div><pre>Gamil - pizda@mail.ru</pre></div>
+      </div>
+      <div>
+        <div><img src="img/logo.png" alt="" /></div>
+      </div>
+      <div>
+        <div><pre>City - Набережные челны</pre></div>
+        <div>
+          <pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00 </pre>
+        </div>
+      </div>
     </footer>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

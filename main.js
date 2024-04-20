@@ -19,8 +19,6 @@ document.addEventListener("click", function (event) {
   }
 });
 
-
-
 document
   .querySelector(".mobile_header .dropdown_m a")
   .addEventListener("click", function () {
@@ -42,59 +40,52 @@ document.addEventListener("click", function (event) {
   }
 });
 
-
-
-
-
-
-
-
-
-const mobileMenuIcon = document.querySelector('.m_but');
-const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenuIcon = document.querySelector(".m_but");
+const mobileMenu = document.querySelector(".mobile-menu");
 let isMenuOpen = false;
 
-mobileMenuIcon.addEventListener('click', () => {
-    if (!isMenuOpen) {
-        mobileMenu.style.display = 'block';
-        isMenuOpen = true;
-    } else {
-        mobileMenu.style.display = 'none';
-        isMenuOpen = false;
-    }
+mobileMenuIcon.addEventListener("click", () => {
+  if (!isMenuOpen) {
+    mobileMenu.style.display = "block";
+    isMenuOpen = true;
+  } else {
+    mobileMenu.style.display = "none";
+    isMenuOpen = false;
+  }
 });
 
 // Добавляем обработчик клика вне меню
-document.addEventListener('click', (event) => {
-    const target = event.target;
-    // Проверяем, был ли клик вне меню и само меню открыто
-    if (!mobileMenu.contains(target) && !mobileMenuIcon.contains(target) && isMenuOpen) {
-        mobileMenu.style.display = 'none';
-        isMenuOpen = false;
-    }
+document.addEventListener("click", (event) => {
+  const target = event.target;
+  // Проверяем, был ли клик вне меню и само меню открыто
+  if (
+    !mobileMenu.contains(target) &&
+    !mobileMenuIcon.contains(target) &&
+    isMenuOpen
+  ) {
+    mobileMenu.style.display = "none";
+    isMenuOpen = false;
+  }
 });
-
-
-
 
 const options = {
   root: null,
-  rootMargin: '0px',
-  threshold: 0.5 // Порог видимости элемента
+  rootMargin: "0px",
+  threshold: 0.5, // Порог видимости элемента
 };
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      const counters = entry.target.querySelectorAll('.num_stat');
-      counters.forEach(counter => {
+      const counters = entry.target.querySelectorAll(".num_stat");
+      counters.forEach((counter) => {
         const updateCount = () => {
-          const target = +counter.getAttribute('data-count');
+          const target = +counter.getAttribute("data-count");
           const count = +counter.innerText;
-          
+
           const speed = 50; // Скорость анимации (в миллисекундах)
           const inc = target / speed;
-          
+
           if (count < target) {
             counter.innerText = Math.ceil(count + inc);
             setTimeout(updateCount, 50);
@@ -102,7 +93,7 @@ const observer = new IntersectionObserver(entries => {
             counter.innerText = target;
           }
         };
-        
+
         updateCount();
       });
 
@@ -111,21 +102,14 @@ const observer = new IntersectionObserver(entries => {
   });
 }, options);
 
-const main4Element = document.querySelector('.main_4');
+const main4Element = document.querySelector(".main_4");
 observer.observe(main4Element);
 
-
-
-
 function toggleAnswer(id) {
-  var answer = document.getElementById('answer' + id);
-  if (answer.style.display === 'none' || answer.style.display === '') {
-    answer.style.display = 'block';
+  var answer = document.getElementById("answer" + id);
+  if (answer.style.display === "none" || answer.style.display === "") {
+    answer.style.display = "block";
   } else {
-    answer.style.display = 'none';
+    answer.style.display = "none";
   }
 }
-
-
-
-

@@ -1,166 +1,231 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="contac.css">
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="contac.css" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
     <title>Контакты</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="top_header">
-          <div class="ttop_header">
-            <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a>  </div>
-            <div class="menu_nav">
-              <ul class="main_m">
-                <li><a href="index.html">Главная</a></li>
-                <li class="dropdown">
-                  <a href="#">Восстановить данные</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="jd.html">с жёсткого диска</a></li>
-                    <li><a href="vjd.html">с внешнего жёсткого диска</a></li>
-                    <li><a href="ssd.html">с SSD</a></li>
-                    <li><a href="usb.html">с USB-флешки</a></li>
-                    <li><a href="kp.html">с карты памяти</a></li>
-                    <li><a href="phone.html">с телефона</a></li>
-                    <li><a href="big_phone.html">с планшета</a></li>
-                    <li><a href="raid.html">c RAID-массива</a></li>
-                    <li><a href="od.html">с оптического диска</a></li>
-                  </ul>
-                </li>
-                <li><a href="info.html">О нас</a></li>
-                <li><a href="price.html">Цены</a></li>
-                <li><a href="contact.html" id="select">Контакты</a></li>
-              </ul>
-            </div>
-            <div class="send_message">
-              <button onclick="window.location.href='call_message.html'">Оставить заявку</button>
-            </div>
+      <div class="top_header">
+        <div class="ttop_header">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="" /></a>
           </div>
-          <div class="mobile_header">
-            <div class="mobile-menu-icon">
-              <div class="m_but"> <p>&#8801;</p> </div>
-              <div><img src="img/logo.png" alt=""></div>
-            </div>
-            <nav class="mobile-menu">
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li class="dropdown_m">
-                      <a href="#">Восстановить данные</a>
-                      <ul class="dropdown-menu_m">
-                        <li><a href="jd.html">с жёсткого диска</a></li>
-                        <li><a href="vjd.html">с внешнего жёсткого диска</a></li>
-                        <li><a href="ssd.html">с SSD</a></li>
-                        <li><a href="usb.html">с USB-флешки</a></li>
-                        <li><a href="kp.html">с карты памяти</a></li>
-                        <li><a href="phone.html">с телефона</a></li>
-                        <li><a href="big_phone.html">с планшета</a></li>
-                        <li><a href="raid.html">c RAID-массива</a></li>
-                        <li><a href="od.html">с оптического диска</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="info.html">О нас</a></li>
-                    <li><a href="price.html">Цены</a></li>
-                    <li><a href="contact.html">Контакты</a></li>
-                    <li><button onclick="window.location.href='call_message.html'">Оставить заявку</button></li>
+          <div class="menu_nav">
+            <ul class="main_m">
+              <li><a href="index.html">Главная</a></li>
+              <li class="dropdown">
+                <a href="#">Восстановить данные</a>
+                <ul class="dropdown-menu">
+                  <li><a href="jd.html">с жёсткого диска</a></li>
+                  <li><a href="vjd.html">с внешнего жёсткого диска</a></li>
+                  <li><a href="ssd.html">с SSD</a></li>
+                  <li><a href="usb.html">с USB-флешки</a></li>
+                  <li><a href="kp.html">с карты памяти</a></li>
+                  <li><a href="phone.html">с телефона</a></li>
+                  <li><a href="big_phone.html">с планшета</a></li>
+                  <li><a href="raid.html">c RAID-массива</a></li>
+                  <li><a href="od.html">с оптического диска</a></li>
                 </ul>
-            </nav>
-            
+              </li>
+              <li><a href="info.html">О нас</a></li>
+              <li><a href="price.html">Цены</a></li>
+              <li><a href="contact.html" id="select">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="send_message">
+            <button onclick="window.location.href='call_message.html'">
+              Оставить заявку
+            </button>
           </div>
         </div>
-      </header>
-      <main>
-        <h2>КОНТАКТЫ</h2>
-        <div class="text_adres">
-            <div>
-                <p class="name">Адерс:</p>
-                <p class="text_aders">Набережные Челны <br> Проспект Мира, дом 49а </p>
-            </div>
-            <div>
-                <p class="name">График работы:</p>
-                <p class="text_grph">Пн-пт с 10:00 до 20:00<br>
-                  Сб-вс с 11:00 до 17:00 </p>
-            </div>
-            <div>
-                <p class="name">Ссылки:</p>
-                <p class="text_href">
-                    Telegram: <a href="https://t.me/klaimmor_smetana"> > MasGadget<br>
-                    Телефон: +7-917-277-64-98 <br>
-                  Avito: <a href="#"> > MasGadget</a><br>
-                  WhatsApp: +7-917-277-64-98<br></a>
-                </p>
-            </div>
+        <div class="mobile_header">
+          <div class="mobile-menu-icon">
+            <div class="m_but"><p>&#8801;</p></div>
+            <div><img src="img/logo.png" alt="" /></div>
+          </div>
+          <nav class="mobile-menu">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li class="dropdown_m">
+                <a href="#">Восстановить данные</a>
+                <ul class="dropdown-menu_m">
+                  <li><a href="jd.html">с жёсткого диска</a></li>
+                  <li><a href="vjd.html">с внешнего жёсткого диска</a></li>
+                  <li><a href="ssd.html">с SSD</a></li>
+                  <li><a href="usb.html">с USB-флешки</a></li>
+                  <li><a href="kp.html">с карты памяти</a></li>
+                  <li><a href="phone.html">с телефона</a></li>
+                  <li><a href="big_phone.html">с планшета</a></li>
+                  <li><a href="raid.html">c RAID-массива</a></li>
+                  <li><a href="od.html">с оптического диска</a></li>
+                </ul>
+              </li>
+              <li><a href="info.html">О нас</a></li>
+              <li><a href="price.html">Цены</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+              <li>
+                <button onclick="window.location.href='call_message.html'">
+                  Оставить заявку
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="cart">
-            <hr>
-                <script src="https://api-maps.yandex.ru/2.1/?apikey=23c89798-f6c0-444c-be9e-2b4ca301aff1&lang=ru_RU"></script>
-                <style>
-                    #map {
-                        width: 100%;
-                        height: 400px;
-                    }
-                </style>
-                <div id="map"></div>
-                <script>
-                    ymaps.ready(init);
-                    function init() {
-                        var myMap = new ymaps.Map("map", {
-                            center: [55.739795, 52.405649], // Координаты Набережные Челны
-                            zoom: 15
-                        });
-                        // Добавляем метку на карту
-                        var myPlacemark = new ymaps.Placemark([55.739795, 52.405649], {
-                            balloonContent: 'Проспект Мира, дом 49а, Набережные Челны'
-                        });
-                        myMap.geoObjects.add(myPlacemark);
-                    }
-                </script>     
-            <hr>
+      </div>
+    </header>
+    <main>
+      <h2>КОНТАКТЫ</h2>
+      <div class="text_adres">
+        <div>
+          <p class="name">Адерс:</p>
+          <p class="text_aders">
+            Набережные Челны <br />
+            Проспект Мира, дом 49а
+          </p>
         </div>
-        <div class="FAQ">
-          <h2>FAQ</h2>
-          <div class="faq">
-            <div class="question" onclick="toggleAnswer(1)">Каковы ваши тарифы и стоимость восстановления данных?</div>
-            <div class="answer" id="answer1">Мы предлагаем гибкую систему тарифов, основанных на сложности восстановления данных и объеме информации. Для получения точной цены, пожалуйста, свяжитесь с нами для проведения бесплатной оценки.</div>
-            
-            <div class="question" onclick="toggleAnswer(2)">Как долго занимает процесс восстановления данных?</div>
-            <div class="answer" id="answer2">Время восстановления данных зависит от различных факторов, таких как тип повреждения носителя, объем данных и методы восстановления. Мы стараемся выполнить работу как можно быстрее, но точные сроки могут быть определены только после анализа вашего случая.</div>
+        <div>
+          <p class="name">График работы:</p>
+          <p class="text_grph">
+            Пн-пт с 10:00 до 20:00<br />
+            Сб-вс с 11:00 до 17:00
+          </p>
+        </div>
+        <div>
+          <p class="name">Ссылки:</p>
+          <p class="text_href">
+            Telegram:
+            <a href="https://t.me/klaimmor_smetana">
+              > MasGadget<br />
+              Телефон: +7-917-277-64-98 <br />
+              Avito: <a href="#"> > MasGadget</a><br />
+              WhatsApp: +7-917-277-64-98<br
+            /></a>
+          </p>
+        </div>
+      </div>
+      <div class="cart">
+        <hr />
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=23c89798-f6c0-444c-be9e-2b4ca301aff1&lang=ru_RU"></script>
+        <style>
+          #map {
+            width: 100%;
+            height: 400px;
+          }
+        </style>
+        <div id="map"></div>
+        <script>
+          ymaps.ready(init);
+          function init() {
+            var myMap = new ymaps.Map("map", {
+              center: [55.739795, 52.405649], // Координаты Набережные Челны
+              zoom: 15,
+            });
+            // Добавляем метку на карту
+            var myPlacemark = new ymaps.Placemark([55.739795, 52.405649], {
+              balloonContent: "Проспект Мира, дом 49а, Набережные Челны",
+            });
+            myMap.geoObjects.add(myPlacemark);
+          }
+        </script>
+        <hr />
+      </div>
+      <div class="FAQ">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <div class="question" onclick="toggleAnswer(1)">
+            Каковы ваши тарифы и стоимость восстановления данных?
+          </div>
+          <div class="answer" id="answer1">
+            Мы предлагаем гибкую систему тарифов, основанных на сложности
+            восстановления данных и объеме информации. Для получения точной
+            цены, пожалуйста, свяжитесь с нами для проведения бесплатной оценки.
+          </div>
 
-            <div class="question" onclick="toggleAnswer(3)">Каковы шансы на успешное восстановление данных?</div>
-            <div class="answer" id="answer3">Наша команда специалистов обладает обширным опытом в области восстановления данных и использует передовые технологии. Шансы на успешное восстановление зависят от множества факторов, но мы прилагаем максимум усилий для достижения положительного результата.
-            </div>
+          <div class="question" onclick="toggleAnswer(2)">
+            Как долго занимает процесс восстановления данных?
+          </div>
+          <div class="answer" id="answer2">
+            Время восстановления данных зависит от различных факторов, таких как
+            тип повреждения носителя, объем данных и методы восстановления. Мы
+            стараемся выполнить работу как можно быстрее, но точные сроки могут
+            быть определены только после анализа вашего случая.
+          </div>
 
-            <div class="question" onclick="toggleAnswer(4)">Какие типы носителей вы восстанавливаете?</div>
-            <div class="answer" id="answer4">Мы специализируемся на восстановлении данных с различных типов носителей, включая жесткие диски, SSD-накопители, USB-флэшки, карты памяти, RAID-массивы и многие другие.
-            </div>
+          <div class="question" onclick="toggleAnswer(3)">
+            Каковы шансы на успешное восстановление данных?
+          </div>
+          <div class="answer" id="answer3">
+            Наша команда специалистов обладает обширным опытом в области
+            восстановления данных и использует передовые технологии. Шансы на
+            успешное восстановление зависят от множества факторов, но мы
+            прилагаем максимум усилий для достижения положительного результата.
+          </div>
 
-            <div class="question" onclick="toggleAnswer(5)">Есть ли гарантия конфиденциальности моих данных?</div>
-            <div class="answer" id="answer5">Да, мы придерживаемся строгих политик конфиденциальности и безопасности данных. Ваши данные будут обрабатываться с максимальной осторожностью, и мы гарантируем их абсолютную конфиденциальность.</div>
+          <div class="question" onclick="toggleAnswer(4)">
+            Какие типы носителей вы восстанавливаете?
+          </div>
+          <div class="answer" id="answer4">
+            Мы специализируемся на восстановлении данных с различных типов
+            носителей, включая жесткие диски, SSD-накопители, USB-флэшки, карты
+            памяти, RAID-массивы и многие другие.
+          </div>
 
-            <div class="question" onclick="toggleAnswer(6)">Как можно связаться с вами для начала процесса восстановления данных?</div>
-            <div class="answer" id="answer6">Вы можете связаться с нами по телефону, электронной почте или заполнить форму на нашем веб-сайте. Наша команда с удовольствием поможет вам начать процесс восстановления данных и ответит на все ваши вопросы.</div>
+          <div class="question" onclick="toggleAnswer(5)">
+            Есть ли гарантия конфиденциальности моих данных?
+          </div>
+          <div class="answer" id="answer5">
+            Да, мы придерживаемся строгих политик конфиденциальности и
+            безопасности данных. Ваши данные будут обрабатываться с максимальной
+            осторожностью, и мы гарантируем их абсолютную конфиденциальность.
+          </div>
+
+          <div class="question" onclick="toggleAnswer(6)">
+            Как можно связаться с вами для начала процесса восстановления
+            данных?
+          </div>
+          <div class="answer" id="answer6">
+            Вы можете связаться с нами по телефону, электронной почте или
+            заполнить форму на нашем веб-сайте. Наша команда с удовольствием
+            поможет вам начать процесс восстановления данных и ответит на все
+            ваши вопросы.
           </div>
         </div>
-
-      </main>
-      <hr class="footeer_hr">
-      <footer class="footer">
+      </div>
+    </main>
+    <hr class="footeer_hr" />
+    <footer class="footer">
+      <div><pre>Call - +7 (917)277 64 98</pre></div>
+      <div><pre>Gamil - Masgadget@mail.ru</pre></div>
+      <div><img src="img/logo.png" alt="" /></div>
+      <div><pre>City - Набережные челны</pre></div>
+      <div>
+        <pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00 </pre>
+      </div>
+    </footer>
+    <footer class="m_footer">
+      <div>
         <div><pre>Call - +7 (917)277 64 98</pre></div>
         <div><pre>Gamil - Masgadget@mail.ru</pre></div>
-        <div><img src="img/logo.png" alt=""></div>
+      </div>
+      <div>
+        <div><img src="img/logo.png" alt="" /></div>
+      </div>
+      <div>
         <div><pre>City - Набережные челны</pre></div>
-        <div><pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00 </pre></div>
-      </footer>
-      <footer class="m_footer">
-        <div><div><pre>Call - +7 (917)277 64 98</pre></div>
-        <div><pre>Gamil - Masgadget@mail.ru</pre></div></div>
-        <div> <div><img src="img/logo.png" alt=""></div></div>
-        <div> <div><pre>City - Набережные челны</pre></div>
-        <div><pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00 </pre></div></div>
-      </footer>
-      <script src="main.js"></script>
-</body>
+        <div>
+          <pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00 </pre>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>

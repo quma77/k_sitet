@@ -1,77 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="call_messsage.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="stylesheet" href="call_messsage.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
     <title>Оставить заявку</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <h2>Оставьте заявку на звонок</h2>
     <div class="start">
-        <form id="myForm">
-            <div class="del">
-                <div class="left">
+      <form id="myForm">
+        <div class="del">
+          <div class="left">
             <label for="name">Имя*:</label>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name" required /><br /><br />
             <label for="issue">Выберите устройство</label>
             <select id="issue" name="issue">
-                <option value="Жёсткий диск (внутренний)">Жёсткий диск</option>
-                <option value="Жёсткий диск (внешний)">Внешний жесткий диск</option>
-                <option value="SSD">SSD</option>
-                <option value="USB-флешка">USB-флешка</option>
-                <option value="Карта памяти">Карта памяти</option>
-                <option value="Телефон">Телефон</option>
-                <option value="Планшет">Планшет</option>
-                <option value="RAID-массив">RAID-массив</option>
-                <option value="Оптический диск">Оптического диск</option>
-            </select><br><br>
+              <option value="Жёсткий диск (внутренний)">Жёсткий диск</option>
+              <option value="Жёсткий диск (внешний)">
+                Внешний жесткий диск
+              </option>
+              <option value="SSD">SSD</option>
+              <option value="USB-флешка">USB-флешка</option>
+              <option value="Карта памяти">Карта памяти</option>
+              <option value="Телефон">Телефон</option>
+              <option value="Планшет">Планшет</option>
+              <option value="RAID-массив">RAID-массив</option>
+              <option value="Оптический диск">Оптического диск</option></select
+            ><br /><br />
             <label for="phone">Номер телефона*:</label>
-            <input type="tel" id="phone" name="phone" required><br><br>
-            <img src="img/logo.png" alt="">
-        </div>
-        <div class="right">
+            <input type="tel" id="phone" name="phone" required /><br /><br />
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div class="right">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="comment">Комментарий (Удобное время для звонка \ описать суть проблемы):</label><br>
-            <textarea id="comment" name="comment"></textarea><br><br>
-            <input type="submit" value="Отправить">
+            <input type="email" id="email" name="email" required /><br /><br />
+            <label for="comment"
+              >Комментарий (Удобное время для звонка \ описать суть
+              проблемы):</label
+            ><br />
+            <textarea id="comment" name="comment"></textarea><br /><br />
+            <input type="submit" value="Отправить" />
+          </div>
         </div>
-        </div>
-        </form>
+      </form>
     </div>
     <div class="back">
-        <a href="index.html"><-- <span class="del_but">Вернуться на главную</span></a>
+      <a href="index.html"
+        ><-- <span class="del_but">Вернуться на главную</span></a
+      >
     </div>
 
-      <hr class="h2_hr">
+    <hr class="h2_hr" />
 
-      <script>
-        document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Предотвращаем отправку формы по умолчанию
 
-    const name = document.getElementById("name").value;
-    const issue = document.getElementById("issue").value;
-    const phone = document.getElementById("phone").value;
-    const email = document.getElementById("email").value;
-    const comment = document.getElementById("comment").value;
+          const name = document.getElementById("name").value;
+          const issue = document.getElementById("issue").value;
+          const phone = document.getElementById("phone").value;
+          const email = document.getElementById("email").value;
+          const comment = document.getElementById("comment").value;
 
-    if (!/^[а-яА-ЯёЁ]+$/.test(name)) {
-        alert("Пожалуйста, введите только русские буквы в поле 'Имя'.");
-        return;
-    }
+          if (!/^[а-яА-ЯёЁ]+$/.test(name)) {
+            alert("Пожалуйста, введите только русские буквы в поле 'Имя'.");
+            return;
+          }
 
-    // Проверка на ввод ликвидного русского номера и только цифр для телефона
-    if (!/^((\+7|8)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/.test(phone)) {
-        alert("Пожалуйста, введите ликвидный русский номер телефона только цифрами.");
-        return;
-    }
+          // Проверка на ввод ликвидного русского номера и только цифр для телефона
+          if (
+            !/^((\+7|8)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/.test(phone)
+          ) {
+            alert(
+              "Пожалуйста, введите ликвидный русский номер телефона только цифрами."
+            );
+            return;
+          }
 
-
-    const message = `
+          const message = `
         Имя: ${name}
         Устройство: ${issue}
         Номер телефона: ${phone}
@@ -79,45 +93,51 @@
         Комментарий: ${comment}
     `;
 
-    const token = "6479574195:AAE8dCZZthMDpapQhSXEBm8W30quU0yn9lA";
-    const chatId = "440526648";
-    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+          const token = "6479574195:AAE8dCZZthMDpapQhSXEBm8W30quU0yn9lA";
+          const chatId = "440526648";
+          const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
+            message
+          )}`;
 
-    fetch(url)
-        .then(response => {
-            if (response.ok) {
+          fetch(url)
+            .then((response) => {
+              if (response.ok) {
                 alert("Данные успешно отправлены в телеграм!");
                 window.location.href = "index.html";
-            } else {
+              } else {
                 alert("Произошла ошибка при отправке данных в телеграм.");
-            }
-        })
-        .catch(error => {
-            console.error("Ошибка:", error);
-            alert("Произошла ошибка при отправке данных в телеграм.");
+              }
+            })
+            .catch((error) => {
+              console.error("Ошибка:", error);
+              alert("Произошла ошибка при отправке данных в телеграм.");
+            });
         });
-});
     </script>
 
-
-<footer class="footer">
-    <div><pre>Call - +7 (917)277 64 98</pre></div>
-    <div><pre>Gamil - Masgadget@mail.ru</pre></div>
-    <div><img src="img/logo.png" alt=""></div>
-    <div><pre>City - Набережные челны</pre></div>
-    <div><pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00 </pre></div>
-  </footer>
-  <footer class="m_footer">
-    <div><div><pre>Call - +7 (917)277 64 98</pre></div>
-    <div><pre>Gamil - Masgadget@mail.ru</pre></div></div>
-    <div> <div><img src="img/logo.png" alt=""></div></div>
-    <div> <div><pre>City - Набережные челны</pre></div>
-    <div><pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00 </pre></div></div>
-  </footer>
-</body>
+    <footer class="footer">
+      <div><pre>Call - +7 (917)277 64 98</pre></div>
+      <div><pre>Gamil - Masgadget@mail.ru</pre></div>
+      <div><img src="img/logo.png" alt="" /></div>
+      <div><pre>City - Набережные челны</pre></div>
+      <div>
+        <pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00 </pre>
+      </div>
+    </footer>
+    <footer class="m_footer">
+      <div>
+        <div><pre>Call - +7 (917)277 64 98</pre></div>
+        <div><pre>Gamil - Masgadget@mail.ru</pre></div>
+      </div>
+      <div>
+        <div><img src="img/logo.png" alt="" /></div>
+      </div>
+      <div>
+        <div><pre>City - Набережные челны</pre></div>
+        <div>
+          <pre>Пн-пт с 10:00 до 20:00<br>Сб-вс с 11:00 до 17:00 </pre>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
-
-
-
-
-
