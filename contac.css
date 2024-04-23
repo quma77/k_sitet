@@ -177,6 +177,10 @@ h2 {
   align-items: center;
 }
 
+.color_href a{
+  color: rgb(227, 180, 252);
+}
+
 .answer {
   display: none;
   cursor: pointer;
