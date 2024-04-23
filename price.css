@@ -158,18 +158,16 @@ h3 {
   width: 40vw;
   height: 70px;
   border: solid 1px white;
-  align-items : center;
+  align-items: center;
   display: flex;
 }
-
-
 
 .price_div div {
   width: 30vw;
   height: 70px;
   border: solid 1px white;
   align-content: center;
-  align-items : center;
+  align-items: center;
   display: flex;
 }
 

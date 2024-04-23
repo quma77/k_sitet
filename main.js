@@ -54,10 +54,8 @@ mobileMenuIcon.addEventListener("click", () => {
   }
 });
 
-// Добавляем обработчик клика вне меню
 document.addEventListener("click", (event) => {
   const target = event.target;
-  // Проверяем, был ли клик вне меню и само меню открыто
   if (
     !mobileMenu.contains(target) &&
     !mobileMenuIcon.contains(target) &&
@@ -71,7 +69,7 @@ document.addEventListener("click", (event) => {
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.5, // Порог видимости элемента
+  threshold: 0.5,
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -83,7 +81,7 @@ const observer = new IntersectionObserver((entries) => {
           const target = +counter.getAttribute("data-count");
           const count = +counter.innerText;
 
-          const speed = 50; // Скорость анимации (в миллисекундах)
+          const speed = 50;
           const inc = target / speed;
 
           if (count < target) {
@@ -113,3 +111,7 @@ function toggleAnswer(id) {
     answer.style.display = "none";
   }
 }
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
