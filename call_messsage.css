@@ -139,6 +139,28 @@ form {
   font-size: 20px;
 }
 
+.galoch {
+  color: white;
+  font-family: "Bellota Text";
+  font-size: 18px;
+}
+
+
+.del_but_comit {
+  align-content: center;
+  align-items : center;
+  display: flex;
+  gap: 15px;
+}
+
+.href_galch{
+  color: white;
+  font-family: "Bellota Text";
+  color: rgb(183, 166, 247)
+}
+
+
+
 label {
   display: block;
   margin-bottom: 5px;
@@ -157,11 +179,12 @@ textarea {
 }
 
 input[type="submit"] {
-  padding: 10px 20px;
+  padding: 5px 10px;
   color: #fff;
   border: none;
   cursor: pointer;
   color: white;
+  border: solid rgba(255, 255, 255, 0.609) 1px;
 }
 
 #comment {
